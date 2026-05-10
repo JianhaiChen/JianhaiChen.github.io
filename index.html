@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jian-Hai Chen</title>
     <meta name="description" content="Personal academic website of Jian-Hai Chen.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260510-1">
   </head>
   <body>
     <header class="site-header" aria-label="Site navigation">
@@ -190,8 +190,11 @@
       <a href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
     </footer>
 
-    <script src="site-config.js"></script>
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+    <script>
+      const cacheVersion = Date.now();
+      document.write(`<script src="site-config.js?v=${cacheVersion}"><\/script>`);
+      document.write(`<script src="data.js?v=${cacheVersion}"><\/script>`);
+      document.write(`<script src="app.js?v=${cacheVersion}"><\/script>`);
+    </script>
   </body>
 </html>

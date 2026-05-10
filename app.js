@@ -32,7 +32,7 @@ function renderProfile() {
   setText(".brand span:last-child", config.name);
   setText("#hero-eyebrow", `${config.name} / ${config.aliases}`);
   setText("#hero-title", config.tagline);
-  setText("#hero-bio", config.bio);
+  setText("#hero-bio", config.bio || "");
   setText("#profile-name", config.name);
   setText("#profile-affiliation", config.affiliation);
   setText("#metric-citations", numberFormat.format(profile.metrics.citations.all));
