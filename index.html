@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jian-Hai Chen</title>
     <meta name="description" content="Personal academic website of Jian-Hai Chen.">
-    <link rel="stylesheet" href="styles.css?v=20260510-1">
+    <link rel="stylesheet" href="styles.css?v=20260510-2">
   </head>
   <body>
     <header class="site-header" aria-label="Site navigation">
@@ -15,106 +15,80 @@
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#notes">Notes</a>
+        <a href="#background">Background</a>
+        <a href="#publications">Papers</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#scholar">Scholar</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="intro-section" id="about">
-        <div class="intro-copy">
-          <p class="eyebrow" id="hero-eyebrow">Jian-Hai Chen / Jianhai Chen</p>
-          <h1 id="hero-title">Evolutionary genomics, statistical genetics, and human disease.</h1>
-          <p class="lead" id="hero-bio">
-            I work on questions around new gene evolution, population genetics, 3D genome
-            organization, GWAS, and Mendelian randomization. My research connects genome evolution
-            with medical, agricultural, and conservation problems.
-          </p>
-          <div class="hero-actions" id="hero-links">
-            <a class="primary-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
-            <a class="secondary-link" href="https://orcid.org/0000-0003-0093-2003">ORCID</a>
-            <a class="secondary-link" href="https://github.com/JianhaiChen">GitHub</a>
-          </div>
-        </div>
-        <aside class="profile-panel" aria-label="Profile summary">
-          <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Jian-Hai Chen">
-          <div>
-            <p class="profile-name" id="profile-name">Jian-Hai Chen</p>
+      <section class="front-section" id="about">
+        <article class="front-card bio-card">
+          <img class="bio-photo" src="assets/profile.jpg" alt="Portrait of Jian-Hai Chen">
+          <div class="bio-text">
+            <p class="eyebrow" id="hero-eyebrow">Jian-Hai Chen / Jianhai Chen</p>
+            <h1 id="hero-title">Evolutionary genomics, statistical genetics, and human disease.</h1>
+            <p class="lead" id="hero-bio">
+              I work on questions around new gene evolution, population genetics, 3D genome
+              organization, GWAS, and Mendelian randomization.
+            </p>
             <p class="profile-affiliation" id="profile-affiliation">University of California, Irvine</p>
+            <div class="profile-tags" id="profile-tags" aria-label="Research interests"></div>
+            <div class="hero-actions" id="hero-links">
+              <a class="primary-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
+              <a class="secondary-link" href="https://orcid.org/0000-0003-0093-2003">ORCID</a>
+              <a class="secondary-link" href="https://github.com/JianhaiChen">GitHub</a>
+            </div>
           </div>
-          <div class="profile-tags" id="profile-tags" aria-label="Research interests"></div>
-        </aside>
+        </article>
+
+        <article class="front-card notice-card" id="notices">
+          <p class="eyebrow">Notices</p>
+          <h2>Updates</h2>
+          <div class="compact-list" id="notice-list"></div>
+        </article>
+
+        <article class="front-card blog-card" id="blog">
+          <p class="eyebrow">Blog</p>
+          <h2>Notes</h2>
+          <div class="compact-list" id="blog-list"></div>
+          <a class="section-link" href="notes/">Open notes</a>
+        </article>
       </section>
 
-      <section class="metrics-strip" aria-label="Google Scholar metrics">
-        <div>
-          <span id="metric-citations">952</span>
-          <p>Citations</p>
-        </div>
-        <div>
-          <span id="metric-h">15</span>
-          <p>h-index</p>
-        </div>
-        <div>
-          <span id="metric-i10">22</span>
-          <p>i10-index</p>
-        </div>
-        <div>
-          <span id="metric-publications">44</span>
-          <p>Scholar items</p>
-        </div>
-      </section>
-
-      <section class="section-block" id="research">
+      <section class="section-block overview-section" id="research">
         <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>Current interests</h2>
+          <p class="eyebrow">Overview</p>
+          <h2>Metrics and current interests</h2>
         </div>
-        <div class="focus-grid" id="research-list">
-          <article>
-            <h3>New genes and genome evolution</h3>
-            <p>De novo gene origination, duplicated genes, enhancer capture, and functional innovation.</p>
-          </article>
-          <article>
-            <h3>Statistical genetics</h3>
-            <p>GWAS summary statistics, Mendelian randomization, and genetic evidence for causal inference.</p>
-          </article>
-          <article>
-            <h3>Population and medical genomics</h3>
-            <p>Selection, local adaptation, rare variants, and disease-related evolutionary patterns.</p>
-          </article>
+        <div class="metrics-strip" aria-label="Google Scholar metrics">
+          <div>
+            <span id="metric-citations">952</span>
+            <p>Citations</p>
+          </div>
+          <div>
+            <span id="metric-h">15</span>
+            <p>h-index</p>
+          </div>
+          <div>
+            <span id="metric-i10">22</span>
+            <p>i10-index</p>
+          </div>
+          <div>
+            <span id="metric-publications">44</span>
+            <p>Scholar items</p>
+          </div>
         </div>
+        <div class="focus-grid" id="research-list"></div>
       </section>
 
-      <section class="section-block journey-section">
+      <section class="section-block journey-section" id="background">
         <div class="section-heading">
           <p class="eyebrow">Research Path</p>
           <h2>Brief background from public records</h2>
         </div>
-        <div class="timeline" id="timeline-list">
-          <article class="timeline-item">
-            <span class="timeline-date">2008-2018</span>
-            <div>
-              <h3>Animal genetics and population genomics</h3>
-              <p>Porcine miRNA, pig GWAS, mitogenomes, wild boar domestication, and local adaptation.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <span class="timeline-date">2019-2026</span>
-            <div>
-              <h3>New gene evolution</h3>
-              <p>De novo genes, protein evolution, 3D genome architecture, and human disease phenotypes.</p>
-            </div>
-          </article>
-          <article class="timeline-item">
-            <span class="timeline-date">2024-2026</span>
-            <div>
-              <h3>MR and GWAS methods</h3>
-              <p>Methods using summary statistics for causal inference and exposure-by-group interactions.</p>
-            </div>
-          </article>
-        </div>
+        <div class="timeline" id="timeline-list"></div>
       </section>
 
       <section class="section-block" id="publications">
@@ -128,27 +102,15 @@
         <div class="featured-list" id="featured-list"></div>
       </section>
 
-      <section class="section-block notes-section" id="notes">
+      <section class="section-block sources-section" id="profiles">
         <div class="section-heading">
-          <p class="eyebrow">Notes</p>
-          <h2>Short writing</h2>
+          <p class="eyebrow">Links</p>
+          <h2>Profiles and records</h2>
         </div>
-        <div class="notes-grid">
-          <article class="note-item">
-            <span>Personal notes</span>
-            <h3>Research notes and short essays</h3>
-            <p>This section can hold short articles, project notes, reading notes, or updates.</p>
-            <a href="notes/">Open notes</a>
-          </article>
-          <article class="note-item">
-            <span>How to update</span>
-            <h3>Add a new article</h3>
-            <p>Create a new HTML file under <code>notes/</code>, then link it from <code>notes/index.html</code>.</p>
-          </article>
-        </div>
+        <div class="source-grid" id="source-list"></div>
       </section>
 
-      <section class="section-block">
+      <section class="section-block" id="scholar">
         <div class="section-heading with-action">
           <div>
             <p class="eyebrow">Scholar</p>
@@ -157,31 +119,6 @@
           <a class="section-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Open Scholar profile</a>
         </div>
         <div class="citation-chart" id="citation-chart" aria-label="Annual citation chart"></div>
-      </section>
-
-      <section class="section-block sources-section">
-        <div class="section-heading">
-          <p class="eyebrow">Links</p>
-          <h2>Profiles and records</h2>
-        </div>
-        <div class="source-grid" id="source-list">
-          <a class="source-item" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">
-            <span>Profile</span>
-            <strong>Google Scholar</strong>
-          </a>
-          <a class="source-item" href="https://orcid.org/0000-0003-0093-2003">
-            <span>Identifier</span>
-            <strong>ORCID</strong>
-          </a>
-          <a class="source-item" href="https://github.com/JianhaiChen">
-            <span>Code</span>
-            <strong>GitHub</strong>
-          </a>
-          <a class="source-item" href="https://www.nature.com/articles/s41559-019-0822-5">
-            <span>Paper</span>
-            <strong>Nature Ecology & Evolution</strong>
-          </a>
-        </div>
       </section>
     </main>
 

@@ -51,6 +51,22 @@ function renderProfile() {
 }
 
 function renderConfigSections() {
+  $("#notice-list").innerHTML = (config.notices || []).map((item) => `
+    <div class="compact-item">
+      <span>${escapeHtml(item.date)}</span>
+      <h3>${item.url ? `<a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</h3>
+      <p>${escapeHtml(item.text)}</p>
+    </div>
+  `).join("");
+
+  $("#blog-list").innerHTML = (config.blog || []).map((item) => `
+    <div class="compact-item">
+      <span>${escapeHtml(item.date)}</span>
+      <h3>${item.url ? `<a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</h3>
+      <p>${escapeHtml(item.text)}</p>
+    </div>
+  `).join("");
+
   $("#research-list").innerHTML = config.research.map((item) => `
     <article>
       <h3>${escapeHtml(item.title)}</h3>
