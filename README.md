@@ -27,11 +27,20 @@ python3 -c "from pathlib import Path; data=Path('scholar_data.json').read_text(e
 
 Recommended for a durable academic homepage.
 
-1. Create a public repository named `<your-github-username>.github.io`.
+Automated path:
+
+```bash
+export GITHUB_TOKEN=YOUR_TOKEN
+./deploy_github_pages.sh JianhaiChen
+```
+
+Manual path:
+
+1. Create a public repository named `JianhaiChen.github.io`.
 2. Upload `index.html`, `styles.css`, `app.js`, `data.js`, `.nojekyll`, `README.md`, and the `assets/` folder.
 3. In the repository, open Settings -> Pages.
 4. Select deployment from the `main` branch root.
-5. Your site will be available at `https://<your-github-username>.github.io/`.
+5. Your site will be available at `https://JianhaiChen.github.io/`.
 
 ### Netlify
 
