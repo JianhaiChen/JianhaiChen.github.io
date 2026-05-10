@@ -22,29 +22,29 @@ window.SITE_CONFIG = {
   "notices": [
     {
       "date": "May 2026",
-      "title": "Personal website launched",
-      "text": "This site is hosted on GitHub Pages and will be updated with research notes and publication links.",
-      "url": ""
+      "title": "South Asian wild boar and pig genomics under review",
+      "text": "A project started in 2014 on South Asian wild boars and domestic pigs is now under review, with data and documentation available online.",
+      "url": "notes/south-asian-wild-boar-and-pig.html"
     },
     {
       "date": "May 2026",
-      "title": "Publications",
-      "text": "The complete publication list is maintained on Google Scholar.",
-      "url": "https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN"
+      "title": "New work at UCI: maize 3D genomics",
+      "text": "At UCI, I am working on maize 3D genome organization. Using newly generated 3D genome data from the maize NAM population, I am studying population-level variation in genome architecture.",
+      "url": ""
     }
   ],
   "blog": [
     {
-      "date": "Draft",
-      "title": "Research notes and short essays",
-      "text": "A place for project notes, reading notes, and short writing.",
-      "url": "notes/"
+      "date": "Project story",
+      "title": "South Asian wild boar and pig genomics",
+      "text": "A ten-year project on wild boar origin, domestic pigs, and population genomics.",
+      "url": "notes/south-asian-wild-boar-and-pig.html"
     },
     {
-      "date": "Template",
-      "title": "A simple note template",
-      "text": "Copy the template file under notes/ to add a new article.",
-      "url": "notes/template.html"
+      "date": "Notes",
+      "title": "Research notes and short essays",
+      "text": "Project notes, reading notes, and short writing.",
+      "url": "notes/"
     }
   ],
   "research": [
