@@ -1,5 +1,5 @@
 window.SITE_CONFIG = {
-  "name": "Jian-Hai Chen",
+  "name": "Jian-Hai Chen (陈俭海)",
   "aliases": "Jianhai Chen",
   "affiliation": "University of California, Irvine",
   "tagline": "Evolutionary genomics, statistical genetics, and human disease.",
