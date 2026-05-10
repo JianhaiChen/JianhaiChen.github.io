@@ -181,6 +181,13 @@ main {
   text-decoration: underline;
 }
 
+.blog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
 .intro-section {
   min-height: calc(100vh - 68px);
   display: grid;

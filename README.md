@@ -14,6 +14,7 @@ Open `index.html` in a browser to view the site. The page uses local static file
 - `app.js` for metrics, selected papers, and citation charts
 - `assets/profile.jpg` for the local profile image
 - `notes/` for short articles and personal research notes
+- `feed.xml` for RSS subscription to notes/updates
 
 The public site keeps the publication section simple: it shows selected papers and links to the full Google Scholar profile.
 
@@ -37,6 +38,8 @@ Automated refresh:
 ## Notes
 
 Short articles can be added under `notes/`. Copy `notes/template.html`, rename it, write the article, then add a link to `notes/index.html`.
+
+The homepage includes a Subscribe link to `feed.xml`. When adding a public note, add a matching `<item>` to `feed.xml` so RSS readers can pick it up.
 
 ## Editing site information
 
