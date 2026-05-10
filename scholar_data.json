@@ -1,0 +1,451 @@
+{
+  "profile": {
+    "name": "Jian-Hai Chen (Jianhai Chen)",
+    "otherNames": "Jianhai Chen",
+    "affiliation": "University of california, Irvine",
+    "verifiedEmail": "在 uci.edu 的电子邮件经过验证",
+    "interests": [
+      "MR",
+      "GWAS",
+      "3D Genomics",
+      "population Genetics"
+    ],
+    "metrics": {
+      "citations": {
+        "all": 952,
+        "since2021": 803
+      },
+      "hIndex": {
+        "all": 15,
+        "since2021": 15
+      },
+      "i10Index": {
+        "all": 22,
+        "since2021": 21
+      }
+    },
+    "citationYears": [
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "citationSeries": {
+      "all": [
+        9,
+        3,
+        3,
+        7,
+        9,
+        12,
+        46,
+        51,
+        67,
+        148,
+        113,
+        166,
+        226,
+        80
+      ],
+      "since2021": []
+    },
+    "photo": "https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=1-onMXMAAAAJ&citpid=10",
+    "scholarUrl": "https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN"
+  },
+  "publications": [
+    {
+      "title": "A flexible and unified framework for single-and multi-outcome Mendelian randomization using summary statistics",
+      "authors": "B Kang, D Li, K Xu, J Chen, S Feng, J Wang, G Gao, S Tasaki, BL Pierce, ...",
+      "venue": "The American Journal of Human Genetics, 2026",
+      "year": "2026",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:dshw04ExmUIC"
+    },
+    {
+      "title": "Analysis of the impact of gene evolution on reproductive effects reveals prevalent sexual and germline–soma conflicts",
+      "authors": "SAML Shengqian Xia, Deanna Arsala, Andrea Gschwend, William Koval, Jared ...",
+      "venue": "Nature Ecology and Evolution, 2026",
+      "year": "2026",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:UxriW0iASnsC"
+    },
+    {
+      "title": "Functional innovation through new genes as a general evolutionary process",
+      "authors": "S Xia, J Chen, D Arsala, JJ Emerson, M Long",
+      "venue": "Nature genetics 57 (2), 295-309, 2025",
+      "year": "2025",
+      "citations": 42,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:a0OBvERweLwC"
+    },
+    {
+      "title": "Museum specimens shedding light on the evolutionary history and cryptic diversity of the hedgehog family Erinaceidae",
+      "authors": "Y Zeng, K He, X Chen, W Bai, H Lin, J Chen, N Nedyalkov, N Yamaguchi, ...",
+      "venue": "Integrative Zoology 20 (5), 971-987, 2025",
+      "year": "2025",
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:rO6llkc54NcC"
+    },
+    {
+      "title": "Evolutionarily new genes in humans with disease phenotypes reveal functional enrichment patterns shaped by adaptive innovation and sexual selection",
+      "authors": "JH Chen, P Landback, D Arsala, A Guzzetta, S Xia, J Atlas, C Dong, ...",
+      "venue": "Genome Research, 2025",
+      "year": "2025",
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:NMxIlDl6LWMC"
+    },
+    {
+      "title": "Genomic Insights into the Demographic History and Local Adaptation of Wild Boars Across Eurasia",
+      "authors": "Z Wang, Z Li, T Huang, J Chen, P Xu, R Qiao, H Yin, C Song, D Zhang, ...",
+      "venue": "Cell Genomics, 2025.02. 05.636574, 2025",
+      "year": "2025",
+      "citations": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:xtRiw3GOFMkC"
+    },
+    {
+      "title": "Positive selection on rare variants of IGF1R and BRD4 underlying the cold adaptation of wild boar",
+      "authors": "J Chen, I Jakovlić, M Sablin, S Xia, Z Xu, Y Guo, R Kuang, J Zhong, Y Jia, ...",
+      "venue": "Genetics Selection Evolution 57 (1), 40, 2025",
+      "year": "2025",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:NhqRSupF_l8C"
+    },
+    {
+      "title": "The Role of Primate-Specific Genes and Network Dynamics in Cancer Evolution",
+      "authors": "C Dong, YW Su, Z Liao, Q Xu, HX Guo, J Chen, W Wei, S Xia, Z Cheng, ...",
+      "venue": "bioRxiv, 2025.07. 23.666306, 2025",
+      "year": "2025",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:1sJd4Hv_s6UC"
+    },
+    {
+      "title": "Integrative Mendelian Randomization for Detecting Exposure-by-group Interactions Using Group-Specific and Combined Summary Statistics",
+      "authors": "K Xu, N Maydanchik, B Kang, J Chen, Q Chen, G Xu, S Tasaki, ...",
+      "venue": "Plos Genetics, 2025.01. 26.25321136, 2025",
+      "year": "2025",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:CHSYGLWDkRkC"
+    },
+    {
+      "title": "Systemic inflammation and risk of Parkinson’s disease: A prospective cohort study and genetic analysis",
+      "authors": "C Li, B Ke, J Chen, Y Xiao, S Wang, R Jiang, X Zheng, J Lin, J Huang, ...",
+      "venue": "Brain, behavior, and immunity 117, 447-455, 2024",
+      "year": "2024",
+      "citations": 25,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:RGFaLdJalmkC"
+    },
+    {
+      "title": "The rapid evolution of de novo proteins in structure and complex",
+      "authors": "J Chen, Q Li, S Xia, D Arsala, D Sosa, D Wang, M Long",
+      "venue": "Genome Biology and Evolution 16 (6), evae107, 2024",
+      "year": "2024",
+      "citations": 14,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:pqnbT2bcN3wC"
+    },
+    {
+      "title": "Homozygous variant in DRC3 (LRRC48) gene causes asthenozoospermia and male infertility",
+      "authors": "J Qin, J Wang, J Chen, J Xu, S Liu, D Deng, F Li",
+      "venue": "Journal of Human Genetics 69 (8), 401-409, 2024",
+      "year": "2024",
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:HoB7MX3m0LUC"
+    },
+    {
+      "title": "Sexual conflict drive in the rapid evolution of new gametogenesis genes",
+      "authors": "NW VanKuren, J Chen, M Long",
+      "venue": "Seminars in Cell & Developmental Biology 159, 27-37, 2024",
+      "year": "2024",
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:O3NaXMp0MMsC"
+    },
+    {
+      "title": "The three-dimensional genome drives the evolution of asymmetric gene duplicates via enhancer capture-divergence",
+      "authors": "UJ Lee, D Arsala, S Xia, C Li, M Ali, N Svetec, CB Langer, DR Sobreira, ...",
+      "venue": "Science Advances 10 (51), eadn6625, 2024",
+      "year": "2024",
+      "citations": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:_xSYboBqXhAC"
+    },
+    {
+      "title": "Novel mutation leading to splice donor loss in a conserved site of DMD gene causes Duchenne muscular dystrophy with cryptorchidism",
+      "authors": "J Chen, Y Jia, J Zhong, K Zhang, H Dai, GG He, F Li, L Zeng, C Fan, H Xu",
+      "venue": "Journal of Medical Genetics, 2024.01. 29.24301909, 2024",
+      "year": "2024",
+      "citations": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:2P1L_qKh6hAC"
+    },
+    {
+      "title": "Genetic research into neurodegenerative disorders",
+      "authors": "X Zheng, J Chen, C Li",
+      "venue": "Frontiers in Neurology 15, 1367627, 2024",
+      "year": "2024",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:GnPB-g6toBAC"
+    },
+    {
+      "title": "Human gene age dating reveals an early and rapid evolutionary construction of the adaptive immune system",
+      "authors": "L Zhang, JJ Park, MB Dong, D Arsala, S Xia, J Chen, D Sosa, JE Atlas, ...",
+      "venue": "Genome Biology and Evolution 15 (5), evad081, 2023",
+      "year": "2023",
+      "citations": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:maZDTaKrznsC"
+    },
+    {
+      "title": "蛋白质组信息学（Proteomics Informatics）",
+      "authors": "JC Bairong Shen, Jian Huang",
+      "venue": "ISBN：9787030765185, 2023",
+      "year": "2023",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:pyW8ca7W8N0C"
+    },
+    {
+      "title": "Application in Evolutionary Novelties and Diversities: Medicine, Agriculture, and Conservation",
+      "authors": "J Chen, N Šprem, Y Wu, S Xia",
+      "venue": "Frontiers in Genetics 13, 3614, 2023",
+      "year": "2023",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:k_IJM867U9cC"
+    },
+    {
+      "title": "Comparative N-glycoproteomics analysis of clinical samples via different mass spectrometry dissociation methods",
+      "authors": "W Zeng, S Zheng, T Su, J Cheng, Y Mao, Y Zhong, Y Liu, J Chen, W Zhao, ...",
+      "venue": "Frontiers in chemistry 10, 839470, 2022",
+      "year": "2022",
+      "citations": 34,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:J_g5lzvAfSwC"
+    },
+    {
+      "title": "Whole-genome sequencing identifies rare missense variants of WNT16 and ERVW-1 causing the systemic lupus erythematosus",
+      "authors": "J Chen, P Zhang, H Chen, X Wang, X He, J Zhong, HP Zheng, X Li, ...",
+      "venue": "Genomics 114 (3), 110332, 2022",
+      "year": "2022",
+      "citations": 25,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:TQgYirikUcIC"
+    },
+    {
+      "title": "The de novo assembly of a European wild boar genome revealed unique patterns of chromosomal structural variations and segmental duplications",
+      "authors": "J Chen, J Zhong, X He, X Li, P Ni, T Safner, N Šprem, J Han",
+      "venue": "Animal Genetics https://drive.google.com/drive/folders …, 2022",
+      "year": "2022",
+      "citations": 15,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:4JMBOYKVnBMC"
+    },
+    {
+      "title": "Retrogene Duplication and Expression Patterns Shaped by the Evolution of Sex Chromosomes in Malaria Mosquitoes",
+      "authors": "IVS Miller, Duncan, Jianhai Chen, Jiangtao Liang, Esther Betrán, Manyuan Long",
+      "venue": "Genes 13 ((6)), 968, 2022",
+      "year": "2022",
+      "citations": 14,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:e5wmG9Sq2KIC"
+    },
+    {
+      "title": "Genome-wide methylation analyses of human sperm unravel novel differentially methylated regions in asthenozoospermia",
+      "authors": "J Li, J Xu, T Yang, J Chen, F Li, B Shen, C Fan",
+      "venue": "Epigenomics 14 (16), 951-964, 2022",
+      "year": "2022",
+      "citations": 12,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:M3NEmzRMIkIC"
+    },
+    {
+      "title": "Novel Rare Mutation in a Conserved Site of PTPRB Causes Human Hypoplastic Left Heart Syndrome",
+      "authors": "Y Jia, J Chen, J Zhong, X He, L Zeng, Y Wang, J Li, S Xia, E Ye, J Zhao, ...",
+      "venue": "Clinical Genetics, 2022",
+      "year": "2022",
+      "citations": 12,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:RHpTSmoSYBkC"
+    },
+    {
+      "title": "The novel compound heterozygous rare variants may impact positively selected regions of TUBGCP6, a microcephaly associated gene",
+      "authors": "J Chen, L Ying, L Zeng, C Li, Y Jia, H Yang, G Yang",
+      "venue": "Frontiers in Ecology and Evolution 10, 1059477, 2022",
+      "year": "2022",
+      "citations": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:TFP_iSt0sucC"
+    },
+    {
+      "title": "Positive selection-driven fixation of a hominin-specific amino acid mutation related to dephosphorylation in IRF9",
+      "authors": "J Chen, X He, I Jakovlić",
+      "venue": "BMC Ecology and Evolution 22 (1), 132, 2022",
+      "year": "2022",
+      "citations": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:RYcK_YlVTxYC"
+    },
+    {
+      "title": "A compendium and comparative epigenomics analysis of cis-regulatory elements in the pig genome",
+      "authors": "Y Zhao, Y Hou, Y Xu, Y Luan, H Zhou, X Qi, M Hu, D Wang, Z Wang, Y Fu, ...",
+      "venue": "Nature communications 12 (1), 2217, 2021",
+      "year": "2021",
+      "citations": 154,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:-f6ydRqryjwC"
+    },
+    {
+      "title": "Slow crabs - fast genomes: Locomotory capacity predicts skew magnitude in crustacean mitogenomes",
+      "authors": "I Jakovlić, H Zou, JH Chen, HP Lei, GT Wang, J Liu, D Zhang",
+      "venue": "Molecular Ecology 30 (21), 5488-5502, 2021",
+      "year": "2021",
+      "citations": 25,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:IWHjjKOFINEC"
+    },
+    {
+      "title": "Analysis of whole-genome re-sequencing data of ducks reveals a diverse demographic history and extensive gene flow between Southeast/South Asian and Chinese populations",
+      "authors": "F Jiang, R Lin, C Xiao, T Xie, Y Jiang, J Chen, P Ni, WK Sung, J Han, ...",
+      "venue": "Genetics Selection Evolution 53 (1), 35, 2021",
+      "year": "2021",
+      "citations": 18,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:mVmsd5A6BfQC"
+    },
+    {
+      "title": "A chromosome-level genome assembly of Cairina moschata and comparative genomic analyses",
+      "authors": "F Jiang, Y Jiang, W Wang, C Xiao, R Lin, T Xie, WK Sung, S Li, I Jakovlić, ...",
+      "venue": "BMC genomics 22 (1), 581, 2021",
+      "year": "2021",
+      "citations": 14,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:M3ejUd6NZC8C"
+    },
+    {
+      "title": "A Mother’s Story, Mitogenome Relationships in the Genus Rupicapra",
+      "authors": "L Iacolina, E Buzan, T Safner, N Bašić, U Geric, T Tesija, P Lazar, ...",
+      "venue": "Animals 11 (4), 1065, 2021",
+      "year": "2021",
+      "citations": 11,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:7PzlFSSx8tAC"
+    },
+    {
+      "title": "The phylogenetic relationship in chamois",
+      "authors": "L Iacolina, E Bužan, T Safner, N Bašić, U Gerić, T Tešija, P Lazar, ...",
+      "venue": "Abctract Book of 11th Baltic Theriological Conference 2021, 3-3, 2021",
+      "year": "2021",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:lSLTfruPkqcC"
+    },
+    {
+      "title": "A mother's story-the phylogenetic relationships in chamois",
+      "authors": "L Iacolina, E Bužan, T Safner, N Bašić, U Gerič, T Tešija, P Lazar, ...",
+      "venue": "Book of abstracts, 2021",
+      "year": "2021",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:dhFuZR0502QC"
+    },
+    {
+      "title": "Genetic parameter estimation and genome-wide association study (GWAS) of red blood cell count at three stages in a Duroc× Erhualian pig population",
+      "authors": "J ZHANG",
+      "venue": "Journal of Integrative Agriculture 19 (3), 793-799, 2020",
+      "year": "2020",
+      "citations": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:JV2RwH3_ST0C"
+    },
+    {
+      "title": "Can whole mitogenome analyses contribute to the elucidation of Rupicapra phylogeny?",
+      "authors": "L Iacolina, E Buzan, T Safner, N Bašić, U Gerič, T Tešija, P Lazar, ...",
+      "venue": "Biodiversity Genomics Conference 2020, 97-98, 2020",
+      "year": "2020",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:vV6vV6tmYwMC"
+    },
+    {
+      "title": "Assembly of a Complete Mitogenome of Balkan Chamois (Rupicapra rupicapra balcanica)",
+      "authors": "T Tešija, T Safner, L Iacolina, E Bužan, N Bašić, C Jianhai, H Jianlin, ...",
+      "venue": "Zbornik sažetaka 55. hrvatskog i 15. međunarodnog simpozija agronoma, 203-203, 2020",
+      "year": "2020",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:QIV2ME_5wuYC"
+    },
+    {
+      "title": "Rapid evolution of protein diversity by de novo origination in Oryza",
+      "authors": "L Zhang, Y Ren, T Yang, G Li, J Chen, AR Gschwend, Y Yu, G Hou, J Zi, ...",
+      "venue": "Nature ecology & evolution 3 (4), 679-690, 2019",
+      "year": "2019",
+      "citations": 204,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:4TOpqqG69KYC"
+    },
+    {
+      "title": "Excess of retrogene traffic in pig X chromosome",
+      "authors": "J Chen, E Mortola, X Du, S Zhao, X Liu",
+      "venue": "Genetica 147 (1), 23-32, 2019",
+      "year": "2019",
+      "citations": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:Wp0gIr-vW9MC"
+    },
+    {
+      "title": "Detecting the Population Structure and Scanning for Signatures of Selection in Horses (Equus caballus) From Whole-Genome Sequencing Data",
+      "authors": "C Zhang, P Ni, HI Ahmad, M Gemingguli, A Baizilaitibei, D Gulibaheti, ...",
+      "venue": "Evolutionary Bioinformatics 14, 1176934318775106, 2018",
+      "year": "2018",
+      "citations": 34,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:YOwf2qJgpHMC"
+    },
+    {
+      "title": "Population size may shape the accumulation of functional mutations following domestication",
+      "authors": "J Chen, P Ni, X Li, J Han, I Jakovlić, C Zhang, S Zhao",
+      "venue": "BMC Evolutionary Biology 18 (1), 4, 2018",
+      "year": "2018",
+      "citations": 28,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:4DMP91E08xMC"
+    },
+    {
+      "title": "Selective constraints in cold‐region wild boars may defuse the effects of small effective population size on molecular evolution of mitogenomes",
+      "authors": "J Chen, P Ni, TN Tran Thi, EV Kamaldinov, VL Petukhov, J Han, X Liu, ...",
+      "venue": "Ecology and evolution 8 (16), 8102-8114, 2018",
+      "year": "2018",
+      "citations": 27,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:aqlVkmm33-oC"
+    },
+    {
+      "title": "De novo assembly of mitochondrial genomes provides insights into genetic diversity and molecular evolution in wild boars and domestic pigs",
+      "authors": "P Ni, AA Bhuiyan, JH Chen, J Li, C Zhang, S Zhao, X Du, H Li, H Yu, X Liu, ...",
+      "venue": "Genetica 146 (3), 277-285, 2018",
+      "year": "2018",
+      "citations": 9,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:blknAaTinKkC"
+    },
+    {
+      "title": "Genomic analysis reveals selection in Chinese native black pig",
+      "authors": "Y Fu, C Li, Q Tang, S Tian, L Jin, J Chen, M Li, C Li",
+      "venue": "Scientific reports 6 (1), 36354, 2016",
+      "year": "2016",
+      "citations": 36,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:qxL8FJ1GzNcC"
+    },
+    {
+      "title": "Genomewide association studies for hematological traits and T lymphocyte subpopulations in a Duroc × Erhualian F2 resource population",
+      "authors": "J Zhang, JH Chen, XD Liu, HY Wang, XL Liu, XY Li, ZF Wu, MJ Zhu, ...",
+      "venue": "Journal of Animal Science 94 (12), 5028-5041, 2016",
+      "year": "2016",
+      "citations": 19,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:NaGl4SEjCO4C"
+    },
+    {
+      "title": "The complete mitochondrial genome of Mong Cai pig (Sus scrofa) in Vietnam",
+      "authors": "TNT Tran, P Ni, J Chen, TT Le, K Steve, J Han, H Wang, S Zhao",
+      "venue": "Mitochondrial DNA Part B 1 (1), 226-227, 2016",
+      "year": "2016",
+      "citations": 9,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=1-onMXMAAAAJ:9ZlFYXVOiuMC"
+    },
+    {
+      "title": "An estimation of Erinaceidae phylogeny: a combined analysis approach",
+      "authors": "K He, JH Chen, GC Gould, N Yamaguchi, HS Ai, YX Wang, YP Zhang, ...",
+      "venue": "PloS one 7 (6), e39304, 2012",
+      "year": "2012",
+      "citations": 85,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:_kc_bZDykSQC"
+    },
+    {
+      "title": "Expression analysis of miRNAs in porcine fetal skeletal muscle on days 65 and 90 of gestation",
+      "authors": "J Chen, W Wei, X Xiao, MJ Zhu, B Fan, SH Zhao",
+      "venue": "Asian-Australasian Journal of Animal Sciences 21 (7), 954-960, 2008",
+      "year": "2008",
+      "citations": 15,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=1-onMXMAAAAJ&citation_for_view=1-onMXMAAAAJ:zA6iFVUQeVQC"
+    }
+  ]
+}

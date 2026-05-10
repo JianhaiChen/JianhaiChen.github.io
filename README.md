@@ -1,6 +1,6 @@
 # Jian-Hai Chen Academic Website
 
-Static academic profile built from the public Google Scholar profile:
+Static personal academic website built from the public Google Scholar profile:
 
 https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN
 
@@ -9,17 +9,32 @@ Open `index.html` in a browser to view the site. The page uses local static file
 - `index.html` for structure
 - `styles.css` for layout and visual design
 - `data.js` for Scholar-derived profile/publication data
-- `app.js` for filtering, sorting, featured papers, and citation charts
+- `app.js` for metrics, selected papers, and citation charts
 - `assets/profile.jpg` for the local profile image
+- `notes/` for short articles and personal research notes
 
-The site also includes a publication-based research trail and source panel built from public records on Google Scholar, ORCID, Nature, Genome Research, PLOS Genetics, Springer Nature, Frontiers, PubMed/PMC, and UChicago Knowledge. The history section is intentionally worded as a public-record research trail rather than a formal CV.
+The public site keeps the publication section simple: it shows selected papers and links to the full Google Scholar profile.
 
-To refresh the data after downloading new Scholar HTML snapshots:
+## Google Scholar refresh
+
+Google Scholar does not provide an official public API. This repository includes a lightweight scraper for the public profile page, but automated runs may occasionally fail if Google blocks the request.
+
+Manual refresh:
 
 ```bash
-python3 parse_scholar.py > scholar_data.json
+python3 parse_scholar.py --fetch > scholar_data.json
 python3 -c "from pathlib import Path; data=Path('scholar_data.json').read_text(encoding='utf-8'); Path('data.js').write_text('window.SCHOLAR_DATA = ' + data + ';\\n', encoding='utf-8')"
 ```
+
+Automated refresh:
+
+- GitHub Actions workflow: `.github/workflows/refresh-scholar.yml`
+- Runs weekly on Monday
+- Can also be started manually from GitHub -> Actions -> Refresh Google Scholar data -> Run workflow
+
+## Notes
+
+Short articles can be added under `notes/`. Copy `notes/template.html`, rename it, write the article, then add a link to `notes/index.html`.
 
 ## Publish
 

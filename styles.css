@@ -122,8 +122,8 @@ p {
 
 h1 {
   margin-bottom: 24px;
-  font-size: clamp(54px, 9vw, 92px);
-  line-height: 0.96;
+  font-size: clamp(46px, 7vw, 74px);
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
@@ -299,7 +299,8 @@ h3 {
 .publication-item,
 .timeline-item,
 .evidence-panel,
-.source-item {
+.source-item,
+.note-item {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.86);
@@ -388,14 +389,14 @@ h3 {
 
 .featured-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
 
 .featured-item {
   display: flex;
   flex-direction: column;
-  min-height: 260px;
+  min-height: 280px;
   padding: 24px;
 }
 
@@ -419,7 +420,7 @@ h3 {
 
 .featured-title {
   margin-bottom: 14px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .featured-authors,
@@ -560,6 +561,63 @@ h3 {
   padding-bottom: 70px;
 }
 
+.section-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--accent-strong);
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 740;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.note-item {
+  padding: 24px;
+}
+
+.note-item span {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 780;
+}
+
+.note-item p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.note-item a {
+  color: var(--accent-strong);
+  font-weight: 740;
+}
+
+.note-item code {
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #edf2ee;
+}
+
+.note-page {
+  max-width: 820px;
+}
+
+.note-page p:not(.eyebrow):not(.lead) {
+  color: #3f474b;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
 .citation-chart {
   display: grid;
   grid-template-columns: repeat(14, minmax(28px, 1fr));
@@ -677,6 +735,7 @@ h3 {
   .metrics-strip,
   .focus-grid,
   .featured-list,
+  .notes-grid,
   .source-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -714,6 +773,7 @@ h3 {
   .metrics-strip,
   .focus-grid,
   .featured-list,
+  .notes-grid,
   .publication-tools,
   .source-grid {
     grid-template-columns: 1fr;
