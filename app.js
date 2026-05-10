@@ -1,6 +1,7 @@
 const data = window.SCHOLAR_DATA;
 const profile = data.profile;
 const publications = data.publications;
+const config = window.SITE_CONFIG;
 
 const numberFormat = new Intl.NumberFormat("en-US");
 const $ = (selector) => document.querySelector(selector);
@@ -27,6 +28,13 @@ function highlightAuthor(text) {
 }
 
 function renderProfile() {
+  document.title = config.name;
+  setText(".brand span:last-child", config.name);
+  setText("#hero-eyebrow", `${config.name} / ${config.aliases}`);
+  setText("#hero-title", config.tagline);
+  setText("#hero-bio", config.bio);
+  setText("#profile-name", config.name);
+  setText("#profile-affiliation", config.affiliation);
   setText("#metric-citations", numberFormat.format(profile.metrics.citations.all));
   setText("#metric-h", numberFormat.format(profile.metrics.hIndex.all));
   setText("#metric-i10", numberFormat.format(profile.metrics.i10Index.all));
@@ -36,6 +44,36 @@ function renderProfile() {
   tagContainer.innerHTML = profile.interests
     .map((interest) => `<span class="tag">${escapeHtml(interest)}</span>`)
     .join("");
+
+  $("#hero-links").innerHTML = config.links.map((link) => `
+    <a class="${link.primary ? "primary-link" : "secondary-link"}" href="${escapeHtml(link.url)}">${escapeHtml(link.label)}</a>
+  `).join("");
+}
+
+function renderConfigSections() {
+  $("#research-list").innerHTML = config.research.map((item) => `
+    <article>
+      <h3>${escapeHtml(item.title)}</h3>
+      <p>${escapeHtml(item.text)}</p>
+    </article>
+  `).join("");
+
+  $("#timeline-list").innerHTML = config.timeline.map((item) => `
+    <article class="timeline-item">
+      <span class="timeline-date">${escapeHtml(item.date)}</span>
+      <div>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p>${escapeHtml(item.text)}</p>
+      </div>
+    </article>
+  `).join("");
+
+  $("#source-list").innerHTML = config.sources.map((source) => `
+    <a class="source-item" href="${escapeHtml(source.url)}">
+      <span>${escapeHtml(source.label)}</span>
+      <strong>${escapeHtml(source.title)}</strong>
+    </a>
+  `).join("");
 }
 
 function renderFeatured() {
@@ -74,5 +112,6 @@ function renderCitationChart() {
 }
 
 renderProfile();
+renderConfigSections();
 renderFeatured();
 renderCitationChart();

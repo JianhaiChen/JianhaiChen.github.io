@@ -8,6 +8,7 @@ Open `index.html` in a browser to view the site. The page uses local static file
 
 - `index.html` for structure
 - `styles.css` for layout and visual design
+- `site-config.js` for the personal metadata shown on the homepage
 - `data.js` for Scholar-derived profile/publication data
 - `app.js` for metrics, selected papers, and citation charts
 - `assets/profile.jpg` for the local profile image
@@ -35,6 +36,20 @@ Automated refresh:
 ## Notes
 
 Short articles can be added under `notes/`. Copy `notes/template.html`, rename it, write the article, then add a link to `notes/index.html`.
+
+## Editing site information
+
+Most personal information is in `site-config.js`:
+
+- name and aliases
+- affiliation
+- homepage tagline and short bio
+- profile links
+- research cards
+- research path / timeline
+- external source links
+
+Google Scholar-derived metrics and selected papers come from `data.js`, which is generated from `scholar_data.json`.
 
 ## Publish
 

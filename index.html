@@ -24,14 +24,14 @@
     <main id="top">
       <section class="intro-section" id="about">
         <div class="intro-copy">
-          <p class="eyebrow">Jian-Hai Chen / Jianhai Chen</p>
-          <h1>Evolutionary genomics, statistical genetics, and human disease.</h1>
-          <p class="lead">
+          <p class="eyebrow" id="hero-eyebrow">Jian-Hai Chen / Jianhai Chen</p>
+          <h1 id="hero-title">Evolutionary genomics, statistical genetics, and human disease.</h1>
+          <p class="lead" id="hero-bio">
             I work on questions around new gene evolution, population genetics, 3D genome
             organization, GWAS, and Mendelian randomization. My research connects genome evolution
             with medical, agricultural, and conservation problems.
           </p>
-          <div class="hero-actions">
+          <div class="hero-actions" id="hero-links">
             <a class="primary-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
             <a class="secondary-link" href="https://orcid.org/0000-0003-0093-2003">ORCID</a>
             <a class="secondary-link" href="https://github.com/JianhaiChen">GitHub</a>
@@ -40,8 +40,8 @@
         <aside class="profile-panel" aria-label="Profile summary">
           <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Jian-Hai Chen">
           <div>
-            <p class="profile-name">Jian-Hai Chen</p>
-            <p class="profile-affiliation">University of California, Irvine</p>
+            <p class="profile-name" id="profile-name">Jian-Hai Chen</p>
+            <p class="profile-affiliation" id="profile-affiliation">University of California, Irvine</p>
           </div>
           <div class="profile-tags" id="profile-tags" aria-label="Research interests"></div>
         </aside>
@@ -71,7 +71,7 @@
           <p class="eyebrow">Research</p>
           <h2>Current interests</h2>
         </div>
-        <div class="focus-grid">
+        <div class="focus-grid" id="research-list">
           <article>
             <h3>New genes and genome evolution</h3>
             <p>De novo gene origination, duplicated genes, enhancer capture, and functional innovation.</p>
@@ -92,7 +92,7 @@
           <p class="eyebrow">Research Path</p>
           <h2>Brief background from public records</h2>
         </div>
-        <div class="timeline">
+        <div class="timeline" id="timeline-list">
           <article class="timeline-item">
             <span class="timeline-date">2008-2018</span>
             <div>
@@ -164,7 +164,7 @@
           <p class="eyebrow">Links</p>
           <h2>Profiles and records</h2>
         </div>
-        <div class="source-grid">
+        <div class="source-grid" id="source-list">
           <a class="source-item" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">
             <span>Profile</span>
             <strong>Google Scholar</strong>
@@ -190,6 +190,7 @@
       <a href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
     </footer>
 
+    <script src="site-config.js"></script>
     <script src="data.js"></script>
     <script src="app.js"></script>
   </body>
