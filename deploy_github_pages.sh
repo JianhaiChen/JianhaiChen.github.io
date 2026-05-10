@@ -6,16 +6,11 @@ REPO="${USER_NAME}.github.io"
 TOKEN="${GITHUB_TOKEN:-${GH_TOKEN:-}}"
 
 if [[ -z "$TOKEN" ]]; then
-  cat <<MSG
-Missing GitHub token.
-
-Create a classic token with repo scope or a fine-grained token that can create repositories and push contents, then run:
-
-  export GITHUB_TOKEN=YOUR_TOKEN
-  ./deploy_github_pages.sh ${USER_NAME}
-
-MSG
-  exit 1
+  printf "GitHub token: "
+  stty -echo
+  read -r TOKEN
+  stty echo
+  printf "\n"
 fi
 
 status="$(curl -s -o /tmp/github-repo-check.json -w "%{http_code}" \
