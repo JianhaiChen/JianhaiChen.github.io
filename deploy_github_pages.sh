@@ -13,6 +13,29 @@ if [[ -z "$TOKEN" ]]; then
   printf "\n"
 fi
 
+TOKEN="$(printf "%s" "$TOKEN" | tr -d '\r\n')"
+if [[ -z "$TOKEN" ]]; then
+  echo "No token was entered."
+  exit 1
+fi
+
+echo "Checking GitHub token, length ${#TOKEN}..."
+whoami_status="$(curl -s -o /tmp/github-token-user.json -w "%{http_code}" \
+  -H "Authorization: Bearer ${TOKEN}" \
+  -H "Accept: application/vnd.github+json" \
+  https://api.github.com/user)"
+
+if [[ "$whoami_status" != "200" ]]; then
+  echo "GitHub token authentication failed with HTTP ${whoami_status}."
+  cat /tmp/github-token-user.json
+  echo
+  echo "Create a new classic token at https://github.com/settings/tokens with the repo scope, then run again."
+  exit 1
+fi
+
+login="$(python3 -c 'import json; print(json.load(open("/tmp/github-token-user.json")).get("login", ""))')"
+echo "Authenticated as ${login}."
+
 status="$(curl -s -o /tmp/github-repo-check.json -w "%{http_code}" \
   -H "Authorization: Bearer ${TOKEN}" \
   -H "Accept: application/vnd.github+json" \
