@@ -58,7 +58,29 @@
           <div class="compact-list" id="blog-list"></div>
           <div class="blog-actions">
             <a class="section-link" href="notes/">Open notes</a>
-            <a class="section-link" href="feed.xml">Subscribe</a>
+          </div>
+          <div class="subscribe-box" aria-label="Subscribe to notes">
+            <p>Subscribe to new notes</p>
+            <div class="subscribe-actions">
+              <form action="https://blogtrottr.com/" method="get">
+                <input type="hidden" name="subscribe" value="https://JianhaiChen.github.io/feed.xml">
+                <button class="icon-link" type="submit">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 6h16v12H4z"></path>
+                    <path d="m4 7 8 6 8-6"></path>
+                  </svg>
+                  <span>Email updates</span>
+                </button>
+              </form>
+              <a class="icon-link" href="feed.xml">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19h.01"></path>
+                  <path d="M5 5a14 14 0 0 1 14 14"></path>
+                  <path d="M5 12a7 7 0 0 1 7 7"></path>
+                </svg>
+                <span>RSS feed</span>
+              </a>
+            </div>
           </div>
         </article>
       </section>
