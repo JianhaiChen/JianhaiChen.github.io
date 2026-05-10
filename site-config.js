@@ -19,6 +19,34 @@ window.SITE_CONFIG = {
       "url": "https://github.com/JianhaiChen"
     }
   ],
+  "notices": [
+    {
+      "date": "May 2026",
+      "title": "Personal website launched",
+      "text": "This site is hosted on GitHub Pages and will be updated with research notes and publication links.",
+      "url": ""
+    },
+    {
+      "date": "May 2026",
+      "title": "Publications",
+      "text": "The complete publication list is maintained on Google Scholar.",
+      "url": "https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN"
+    }
+  ],
+  "blog": [
+    {
+      "date": "Draft",
+      "title": "Research notes and short essays",
+      "text": "A place for project notes, reading notes, and short writing.",
+      "url": "notes/"
+    },
+    {
+      "date": "Template",
+      "title": "A simple note template",
+      "text": "Copy the template file under notes/ to add a new article.",
+      "url": "notes/template.html"
+    }
+  ],
   "research": [
     {
       "title": "New genes and genome evolution",
