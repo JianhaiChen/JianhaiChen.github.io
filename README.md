@@ -8,7 +8,8 @@ Open `index.html` in a browser to view the site. The page uses local static file
 
 - `index.html` for structure
 - `styles.css` for layout and visual design
-- `site-config.js` for the personal metadata shown on the homepage
+- `site-config.toml` for easy editing of homepage metadata
+- `site-config.js` generated from `site-config.toml`
 - `data.js` for Scholar-derived profile/publication data
 - `app.js` for metrics, selected papers, and citation charts
 - `assets/profile.jpg` for the local profile image
@@ -39,7 +40,7 @@ Short articles can be added under `notes/`. Copy `notes/template.html`, rename i
 
 ## Editing site information
 
-Most personal information is in `site-config.js`:
+Most personal information is in `site-config.toml`:
 
 - name and aliases
 - affiliation
@@ -48,6 +49,12 @@ Most personal information is in `site-config.js`:
 - research cards
 - research path / timeline
 - external source links
+
+After editing `site-config.toml`, regenerate the JavaScript file:
+
+```bash
+python3 build_site_config.py
+```
 
 Google Scholar-derived metrics and selected papers come from `data.js`, which is generated from `scholar_data.json`.
 

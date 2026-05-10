@@ -1,75 +1,75 @@
 window.SITE_CONFIG = {
-  name: "Jian-Hai Chen",
-  aliases: "Jianhai Chen",
-  affiliation: "University of California, Irvine",
-  tagline: "Evolutionary genomics, statistical genetics, and human disease.",
-  bio: "I work on questions around new gene evolution, population genetics, 3D genome organization, GWAS, and Mendelian randomization. My research connects genome evolution with medical, agricultural, and conservation problems.",
-  links: [
+  "name": "Jian-Hai Chen",
+  "aliases": "Jianhai Chen",
+  "affiliation": "University of California, Irvine",
+  "tagline": "Evolutionary genomics, statistical genetics, and human disease.",
+  "bio": "I work on questions around new gene evolution, population genetics, 3D genome organization, GWAS, and Mendelian randomization. My research connects genome evolution with medical, agricultural, and conservation problems.",
+  "links": [
     {
-      label: "Google Scholar",
-      url: "https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN",
-      primary: true
+      "label": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN",
+      "primary": true
     },
     {
-      label: "ORCID",
-      url: "https://orcid.org/0000-0003-0093-2003"
+      "label": "ORCID",
+      "url": "https://orcid.org/0000-0003-0093-2003"
     },
     {
-      label: "GitHub",
-      url: "https://github.com/JianhaiChen"
+      "label": "GitHub",
+      "url": "https://github.com/JianhaiChen"
     }
   ],
-  research: [
+  "research": [
     {
-      title: "New genes and genome evolution",
-      text: "De novo gene origination, duplicated genes, enhancer capture, and functional innovation."
+      "title": "New genes and genome evolution",
+      "text": "De novo gene origination, duplicated genes, enhancer capture, and functional innovation."
     },
     {
-      title: "Statistical genetics",
-      text: "GWAS summary statistics, Mendelian randomization, and genetic evidence for causal inference."
+      "title": "Statistical genetics",
+      "text": "GWAS summary statistics, Mendelian randomization, and genetic evidence for causal inference."
     },
     {
-      title: "Population and medical genomics",
-      text: "Selection, local adaptation, rare variants, and disease-related evolutionary patterns."
+      "title": "Population and medical genomics",
+      "text": "Selection, local adaptation, rare variants, and disease-related evolutionary patterns."
     }
   ],
-  timeline: [
+  "timeline": [
     {
-      date: "2008-2018",
-      title: "Animal genetics and population genomics",
-      text: "Porcine miRNA, pig GWAS, mitogenomes, wild boar domestication, and local adaptation."
+      "date": "2008-2018",
+      "title": "Animal genetics and population genomics",
+      "text": "Porcine miRNA, pig GWAS, mitogenomes, wild boar domestication, and local adaptation."
     },
     {
-      date: "2019-2026",
-      title: "New gene evolution",
-      text: "De novo genes, protein evolution, 3D genome architecture, and human disease phenotypes."
+      "date": "2019-2026",
+      "title": "New gene evolution",
+      "text": "De novo genes, protein evolution, 3D genome architecture, and human disease phenotypes."
     },
     {
-      date: "2024-2026",
-      title: "MR and GWAS methods",
-      text: "Methods using summary statistics for causal inference and exposure-by-group interactions."
+      "date": "2024-2026",
+      "title": "MR and GWAS methods",
+      "text": "Methods using summary statistics for causal inference and exposure-by-group interactions."
     }
   ],
-  sources: [
+  "sources": [
     {
-      label: "Profile",
-      title: "Google Scholar",
-      url: "https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN"
+      "label": "Profile",
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN"
     },
     {
-      label: "Identifier",
-      title: "ORCID",
-      url: "https://orcid.org/0000-0003-0093-2003"
+      "label": "Identifier",
+      "title": "ORCID",
+      "url": "https://orcid.org/0000-0003-0093-2003"
     },
     {
-      label: "Code",
-      title: "GitHub",
-      url: "https://github.com/JianhaiChen"
+      "label": "Code",
+      "title": "GitHub",
+      "url": "https://github.com/JianhaiChen"
     },
     {
-      label: "Paper",
-      title: "Nature Ecology & Evolution",
-      url: "https://www.nature.com/articles/s41559-019-0822-5"
+      "label": "Paper",
+      "title": "Nature Ecology & Evolution",
+      "url": "https://www.nature.com/articles/s41559-019-0822-5"
     }
   ]
 };
