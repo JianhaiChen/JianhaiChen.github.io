@@ -130,4 +130,3 @@ function renderCitationChart() {
 renderProfile();
 renderConfigSections();
 renderFeatured();
-renderCitationChart();
