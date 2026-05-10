@@ -2,7 +2,8 @@ window.SITE_CONFIG = {
   "name": "Jian-Hai Chen (陈俭海)",
   "aliases": "Jianhai Chen",
   "affiliation": "University of California, Irvine",
-  "tagline": "Population and Evolutionary genomics, statistical (MR and GWAS) and 3D genome organization. My research connects genome evolution with medical, agricultural, and conservation problems.",
+  "tagline": "Evolutionary and statistical genomics",
+  "bio": "I work on questions around new gene evolution, population genetics, 3D genome organization, GWAS, and Mendelian randomization. My research connects genome evolution with medical, agricultural, and conservation problems.",
   "links": [
     {
       "label": "Google Scholar",
