@@ -13,8 +13,8 @@ Open `index.html` in a browser to view the site. The page uses local static file
 - `data.js` for Scholar-derived profile/publication data
 - `app.js` for metrics, selected papers, and citation charts
 - `assets/profile.jpg` for the local profile image
-- `notes/` for short articles and personal research notes
-- `feed.xml` for RSS subscription to notes/updates
+- `notes/` for short articles and personal research blogs
+- `feed.xml` for RSS subscription to blogs/updates
 
 The public site keeps the publication section simple: it shows selected papers and links to the full Google Scholar profile.
 
@@ -35,7 +35,7 @@ Automated refresh:
 - Runs weekly on Monday
 - Can also be started manually from GitHub -> Actions -> Refresh Google Scholar data -> Run workflow
 
-## Notes
+## Blogs
 
 Short articles can be added under `notes/`. Copy `notes/template.html`, rename it, write the article, then add a link to `notes/index.html`.
 
@@ -47,12 +47,12 @@ The homepage includes subscription options:
 The homepage left column paginates growing lists:
 
 - Updates show 2 items per page
-- Notes show 3 items per page
+- Blogs show 3 items per page
 - Change these numbers in `app.js` under `paginationState`
 
-Updates and Notes are displayed in the first row of the homepage.
+The homepage order is About, then Updates and Blogs, then research sections.
 
-When adding a public note, add a matching `<item>` to `feed.xml` so RSS/email readers can pick it up.
+When adding a public blog, add a matching `<item>` to `feed.xml` so RSS/email readers can pick it up.
 
 ## Editing site information
 

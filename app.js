@@ -109,8 +109,8 @@ function renderConfigSections() {
     countSelector: "#blog-count",
     statusSelector: "#blog-page-status",
     pagerSelector: "#blog-pager",
-    singular: "note",
-    plural: "notes",
+    singular: "blog",
+    plural: "blogs",
   });
 
   $("#research-list").innerHTML = config.research.map((item) => `

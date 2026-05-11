@@ -41,9 +41,9 @@ window.SITE_CONFIG = {
       "url": "notes/south-asian-wild-boar-and-pig.html"
     },
     {
-      "date": "Notes",
-      "title": "Research notes and short essays",
-      "text": "Project notes, reading notes, and short writing.",
+      "date": "Blogs",
+      "title": "Research blogs and short essays",
+      "text": "Project blogs, reading notes, and short writing.",
       "url": "notes/"
     }
   ],

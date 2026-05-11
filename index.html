@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jian-Hai Chen</title>
     <meta name="description" content="Personal academic website of Jian-Hai Chen.">
-    <link rel="alternate" type="application/rss+xml" title="Jian-Hai Chen Notes" href="feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Jian-Hai Chen Blogs" href="feed.xml">
     <link rel="stylesheet" href="styles.css?v=20260510-4">
   </head>
   <body>
@@ -22,7 +22,28 @@
     </header>
 
     <main id="top">
-      <section class="activity-row" aria-label="Updates and notes">
+      <section class="front-section" id="about">
+        <article class="front-card bio-card">
+          <img class="bio-photo" src="assets/profile.jpg" alt="Portrait of Jian-Hai Chen">
+          <div class="bio-text">
+            <p class="eyebrow" id="hero-eyebrow">Jian-Hai Chen / Jianhai Chen</p>
+            <h1 id="hero-title">Evolutionary genomics, statistical genetics, and human disease.</h1>
+            <p class="lead" id="hero-bio">
+              I work on questions around new gene evolution, population genetics, 3D genome
+              organization, GWAS, and Mendelian randomization.
+            </p>
+            <p class="profile-affiliation" id="profile-affiliation">University of California, Irvine</p>
+            <div class="profile-tags" id="profile-tags" aria-label="Research interests"></div>
+            <div class="hero-actions" id="hero-links">
+              <a class="primary-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
+              <a class="secondary-link" href="https://orcid.org/0000-0003-0093-2003">ORCID</a>
+              <a class="secondary-link" href="https://github.com/JianhaiChen">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="activity-row" aria-label="Updates and blogs">
         <article class="front-card notice-card" id="notices">
           <div class="card-heading">
             <div>
@@ -47,25 +68,25 @@
           <div class="card-heading">
             <div>
               <p class="eyebrow">Blog</p>
-              <h2>Notes</h2>
+              <h2>Blogs</h2>
             </div>
-            <span class="item-count" id="blog-count">0 notes</span>
+            <span class="item-count" id="blog-count">0 blogs</span>
           </div>
           <div class="compact-list" id="blog-list"></div>
           <div class="pager" id="blog-pager" aria-label="Blog pagination">
-            <button type="button" data-page-target="blog" data-page-action="prev" aria-label="Previous notes">
+            <button type="button" data-page-target="blog" data-page-action="prev" aria-label="Previous blogs">
               <span aria-hidden="true">&lt;</span>
             </button>
             <span id="blog-page-status">1 / 1</span>
-            <button type="button" data-page-target="blog" data-page-action="next" aria-label="Next notes">
+            <button type="button" data-page-target="blog" data-page-action="next" aria-label="Next blogs">
               <span aria-hidden="true">&gt;</span>
             </button>
           </div>
           <div class="blog-actions">
-            <a class="section-link" href="notes/">Open notes</a>
+            <a class="section-link" href="notes/">Open blogs</a>
           </div>
-          <div class="subscribe-box" aria-label="Subscribe to notes">
-            <p>Subscribe to new notes</p>
+          <div class="subscribe-box" aria-label="Subscribe to blogs">
+            <p>Subscribe to new blogs</p>
             <div class="subscribe-actions">
               <form action="https://blogtrottr.com/" method="get">
                 <input type="hidden" name="subscribe" value="https://JianhaiChen.github.io/feed.xml">
@@ -85,27 +106,6 @@
                 </svg>
                 <span>RSS feed</span>
               </a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="front-section" id="about">
-        <article class="front-card bio-card">
-          <img class="bio-photo" src="assets/profile.jpg" alt="Portrait of Jian-Hai Chen">
-          <div class="bio-text">
-            <p class="eyebrow" id="hero-eyebrow">Jian-Hai Chen / Jianhai Chen</p>
-            <h1 id="hero-title">Evolutionary genomics, statistical genetics, and human disease.</h1>
-            <p class="lead" id="hero-bio">
-              I work on questions around new gene evolution, population genetics, 3D genome
-              organization, GWAS, and Mendelian randomization.
-            </p>
-            <p class="profile-affiliation" id="profile-affiliation">University of California, Irvine</p>
-            <div class="profile-tags" id="profile-tags" aria-label="Research interests"></div>
-            <div class="hero-actions" id="hero-links">
-              <a class="primary-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
-              <a class="secondary-link" href="https://orcid.org/0000-0003-0093-2003">ORCID</a>
-              <a class="secondary-link" href="https://github.com/JianhaiChen">GitHub</a>
             </div>
           </div>
         </article>
