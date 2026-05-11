@@ -104,7 +104,7 @@ function renderConfigSections() {
     plural: "updates",
   });
 
-  renderPaginatedList("blog", config.blog || [], {
+  renderPaginatedList("blog", window.BLOG_DATA || config.blog || [], {
     listSelector: "#blog-list",
     countSelector: "#blog-count",
     statusSelector: "#blog-page-status",

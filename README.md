@@ -13,7 +13,8 @@ Open `index.html` in a browser to view the site. The page uses local static file
 - `data.js` for Scholar-derived profile/publication data
 - `app.js` for metrics, selected papers, and citation charts
 - `assets/profile.jpg` for the local profile image
-- `notes/` for short articles and personal research blogs
+- `blog-posts/` for the one-file blog source files you edit
+- `notes/` for generated blog pages
 - `feed.xml` for RSS subscription to blogs/updates
 
 The public site keeps the publication section simple: it shows selected papers and links to the full Google Scholar profile.
@@ -37,14 +38,22 @@ Automated refresh:
 
 ## Blogs
 
-Short articles can be added under `notes/`. Copy `notes/template.html`, rename it, write the article, then add a link to `notes/index.html`.
+Short articles can be added by creating one Markdown text file under `blog-posts/`. Copy `blog-posts/template.md`, rename it, and edit that one file.
 
 The homepage includes subscription options:
 
 - Email updates through Blogtrottr using `feed.xml`
 - Direct RSS subscription through `feed.xml`
 
-The homepage left column paginates growing lists:
+After editing a blog source file, run:
+
+```bash
+./publish.sh "Update blog"
+```
+
+This automatically rebuilds the homepage blog card, generated blog pages in `notes/`, the blog index, and the RSS feed, then commits and pushes.
+
+The homepage blog list paginates growing lists:
 
 - Updates show 2 items per page
 - Blogs show 3 items per page
@@ -52,7 +61,7 @@ The homepage left column paginates growing lists:
 
 The homepage order is About, then Updates and Blogs, then research sections.
 
-When adding a public blog, add a matching `<item>` to `feed.xml` so RSS/email readers can pick it up.
+Do not hand-edit generated files in `notes/`, `blog-data.js`, or `feed.xml`; they are rebuilt from `blog-posts/*.md`.
 
 ## Editing site information
 

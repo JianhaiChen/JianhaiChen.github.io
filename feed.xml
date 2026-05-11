@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
   <channel>
-    <title>Jian-Hai Chen Notes</title>
+    <title>Jian-Hai Chen Blogs</title>
     <link>https://JianhaiChen.github.io/notes/</link>
-    <description>Research notes, short essays, and updates from Jian-Hai Chen.</description>
+    <description>Research blogs, short essays, and updates from Jian-Hai Chen.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 10 May 2026 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 00:00:00 +0000</lastBuildDate>
     <item>
       <title>South Asian wild boar and pig genomics</title>
       <link>https://JianhaiChen.github.io/notes/south-asian-wild-boar-and-pig.html</link>
       <guid>https://JianhaiChen.github.io/notes/south-asian-wild-boar-and-pig.html</guid>
-      <pubDate>Sun, 10 May 2026 00:00:00 -0700</pubDate>
-      <description>A ten-year project on wild boar origin, domestic pigs, and population genomics. Manuscript under review.</description>
-    </item>
-    <item>
-      <title>Notes</title>
-      <link>https://JianhaiChen.github.io/notes/</link>
-      <guid>https://JianhaiChen.github.io/notes/</guid>
-      <pubDate>Sun, 10 May 2026 00:00:00 -0700</pubDate>
-      <description>Research notes and short writing will be collected here.</description>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>A ten-year project on wild boar origin, domestic pigs, and population genomics.</description>
     </item>
   </channel>
 </rss>
