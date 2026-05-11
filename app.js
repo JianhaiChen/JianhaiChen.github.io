@@ -83,10 +83,6 @@ function renderProfile() {
   setText("#hero-bio", config.bio || "");
   setText("#profile-name", config.name);
   setText("#profile-affiliation", config.affiliation);
-  setText("#metric-citations", numberFormat.format(profile.metrics.citations.all));
-  setText("#metric-h", numberFormat.format(profile.metrics.hIndex.all));
-  setText("#metric-i10", numberFormat.format(profile.metrics.i10Index.all));
-  setText("#metric-publications", numberFormat.format(publications.length));
 
   const tagContainer = $("#profile-tags");
   tagContainer.innerHTML = profile.interests
@@ -124,16 +120,6 @@ function renderConfigSections() {
     </article>
   `).join("");
 
-  $("#timeline-list").innerHTML = config.timeline.map((item) => `
-    <article class="timeline-item">
-      <span class="timeline-date">${escapeHtml(item.date)}</span>
-      <div>
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.text)}</p>
-      </div>
-    </article>
-  `).join("");
-
   $("#source-list").innerHTML = config.sources.map((source) => `
     <a class="source-item" href="${escapeHtml(source.url)}">
       <span>${escapeHtml(source.label)}</span>
@@ -142,16 +128,34 @@ function renderConfigSections() {
   `).join("");
 }
 
-function renderFeatured() {
-  const featured = [...publications]
+function selectedPublications() {
+  const selected = config.selected_papers || [];
+  const selectedItems = selected
+    .map((item) => {
+      const publication = publications.find((publicationItem) => publicationItem.title === item.title);
+      return publication ? { ...publication, selectedLabel: item.label } : null;
+    })
+    .filter(Boolean);
+
+  if (selectedItems.length) return selectedItems;
+
+  return [...publications]
     .sort((a, b) => b.citations - a.citations || Number(b.year) - Number(a.year))
-    .slice(0, 4);
+    .slice(0, 4)
+    .map((publication) => ({
+      ...publication,
+      selectedLabel: `${numberFormat.format(publication.citations)} citations`,
+    }));
+}
+
+function renderFeatured() {
+  const featured = selectedPublications();
 
   $("#featured-list").innerHTML = featured.map((publication) => `
     <article class="featured-item">
       <div class="featured-meta">
         <span>${publication.year}</span>
-        <span>${numberFormat.format(publication.citations)} citations</span>
+        <span>${escapeHtml(publication.selectedLabel)}</span>
       </div>
       <a class="featured-title" href="${escapeHtml(publication.url)}">${escapeHtml(publication.title)}</a>
       <p class="featured-authors">${highlightAuthor(escapeHtml(publication.authors))}</p>

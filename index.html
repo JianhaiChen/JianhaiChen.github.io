@@ -6,7 +6,7 @@
     <title>Jian-Hai Chen</title>
     <meta name="description" content="Personal academic website of Jian-Hai Chen.">
     <link rel="alternate" type="application/rss+xml" title="Jian-Hai Chen Notes" href="feed.xml">
-    <link rel="stylesheet" href="styles.css?v=20260510-3">
+    <link rel="stylesheet" href="styles.css?v=20260510-4">
   </head>
   <body>
     <header class="site-header" aria-label="Site navigation">
@@ -16,14 +16,80 @@
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#background">Background</a>
         <a href="#publications">Papers</a>
         <a href="#profiles">Profiles</a>
-        <a href="#scholar">Scholar</a>
       </nav>
     </header>
 
     <main id="top">
+      <section class="activity-row" aria-label="Updates and notes">
+        <article class="front-card notice-card" id="notices">
+          <div class="card-heading">
+            <div>
+              <p class="eyebrow">Notices</p>
+              <h2>Updates</h2>
+            </div>
+            <span class="item-count" id="notice-count">0 updates</span>
+          </div>
+          <div class="compact-list" id="notice-list"></div>
+          <div class="pager" id="notice-pager" aria-label="Updates pagination">
+            <button type="button" data-page-target="notices" data-page-action="prev" aria-label="Previous updates">
+              <span aria-hidden="true">&lt;</span>
+            </button>
+            <span id="notice-page-status">1 / 1</span>
+            <button type="button" data-page-target="notices" data-page-action="next" aria-label="Next updates">
+              <span aria-hidden="true">&gt;</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="front-card blog-card" id="blog">
+          <div class="card-heading">
+            <div>
+              <p class="eyebrow">Blog</p>
+              <h2>Notes</h2>
+            </div>
+            <span class="item-count" id="blog-count">0 notes</span>
+          </div>
+          <div class="compact-list" id="blog-list"></div>
+          <div class="pager" id="blog-pager" aria-label="Blog pagination">
+            <button type="button" data-page-target="blog" data-page-action="prev" aria-label="Previous notes">
+              <span aria-hidden="true">&lt;</span>
+            </button>
+            <span id="blog-page-status">1 / 1</span>
+            <button type="button" data-page-target="blog" data-page-action="next" aria-label="Next notes">
+              <span aria-hidden="true">&gt;</span>
+            </button>
+          </div>
+          <div class="blog-actions">
+            <a class="section-link" href="notes/">Open notes</a>
+          </div>
+          <div class="subscribe-box" aria-label="Subscribe to notes">
+            <p>Subscribe to new notes</p>
+            <div class="subscribe-actions">
+              <form action="https://blogtrottr.com/" method="get">
+                <input type="hidden" name="subscribe" value="https://JianhaiChen.github.io/feed.xml">
+                <button class="icon-link" type="submit">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 6h16v12H4z"></path>
+                    <path d="m4 7 8 6 8-6"></path>
+                  </svg>
+                  <span>Email updates</span>
+                </button>
+              </form>
+              <a class="icon-link" href="feed.xml">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19h.01"></path>
+                  <path d="M5 5a14 14 0 0 1 14 14"></path>
+                  <path d="M5 12a7 7 0 0 1 7 7"></path>
+                </svg>
+                <span>RSS feed</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
       <section class="front-section" id="about">
         <article class="front-card bio-card">
           <img class="bio-photo" src="assets/profile.jpg" alt="Portrait of Jian-Hai Chen">
@@ -45,114 +111,14 @@
         </article>
       </section>
 
-      <div class="content-shell">
-        <aside class="activity-column" aria-label="Updates and notes">
-          <article class="front-card notice-card" id="notices">
-            <div class="card-heading">
-              <div>
-                <p class="eyebrow">Notices</p>
-                <h2>Updates</h2>
-              </div>
-              <span class="item-count" id="notice-count">0 updates</span>
-            </div>
-            <div class="compact-list" id="notice-list"></div>
-            <div class="pager" id="notice-pager" aria-label="Updates pagination">
-              <button type="button" data-page-target="notices" data-page-action="prev" aria-label="Previous updates">
-                <span aria-hidden="true">&lt;</span>
-              </button>
-              <span id="notice-page-status">1 / 1</span>
-              <button type="button" data-page-target="notices" data-page-action="next" aria-label="Next updates">
-                <span aria-hidden="true">&gt;</span>
-              </button>
-            </div>
-          </article>
-
-          <article class="front-card blog-card" id="blog">
-            <div class="card-heading">
-              <div>
-                <p class="eyebrow">Blog</p>
-                <h2>Notes</h2>
-              </div>
-              <span class="item-count" id="blog-count">0 notes</span>
-            </div>
-            <div class="compact-list" id="blog-list"></div>
-            <div class="pager" id="blog-pager" aria-label="Blog pagination">
-              <button type="button" data-page-target="blog" data-page-action="prev" aria-label="Previous notes">
-                <span aria-hidden="true">&lt;</span>
-              </button>
-              <span id="blog-page-status">1 / 1</span>
-              <button type="button" data-page-target="blog" data-page-action="next" aria-label="Next notes">
-                <span aria-hidden="true">&gt;</span>
-              </button>
-            </div>
-            <div class="blog-actions">
-              <a class="section-link" href="notes/">Open notes</a>
-            </div>
-            <div class="subscribe-box" aria-label="Subscribe to notes">
-              <p>Subscribe to new notes</p>
-              <div class="subscribe-actions">
-                <form action="https://blogtrottr.com/" method="get">
-                  <input type="hidden" name="subscribe" value="https://JianhaiChen.github.io/feed.xml">
-                  <button class="icon-link" type="submit">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                      <path d="M4 6h16v12H4z"></path>
-                      <path d="m4 7 8 6 8-6"></path>
-                    </svg>
-                    <span>Email updates</span>
-                  </button>
-                </form>
-                <a class="icon-link" href="feed.xml">
-                  <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M5 19h.01"></path>
-                    <path d="M5 5a14 14 0 0 1 14 14"></path>
-                    <path d="M5 12a7 7 0 0 1 7 7"></path>
-                  </svg>
-                  <span>RSS feed</span>
-                </a>
-              </div>
-            </div>
-          </article>
-        </aside>
-
+      <div class="content-shell research-only-shell">
         <div class="research-column" id="research">
           <section class="section-block research-section">
-            <div class="research-layout">
-              <div>
-                <div class="section-heading">
-                  <p class="eyebrow">Research</p>
-                  <h2>Current work</h2>
-                </div>
-                <div class="focus-grid" id="research-list"></div>
-              </div>
-              <aside class="metrics-panel">
-                <p class="eyebrow">Scholar</p>
-                <div class="metrics-strip" aria-label="Google Scholar metrics">
-                  <div>
-                    <span id="metric-citations">952</span>
-                    <p>Citations</p>
-                  </div>
-                  <div>
-                    <span id="metric-h">15</span>
-                    <p>h-index</p>
-                  </div>
-                  <div>
-                    <span id="metric-i10">22</span>
-                    <p>i10-index</p>
-                  </div>
-                  <div>
-                    <span id="metric-publications">44</span>
-                    <p>Scholar items</p>
-                  </div>
-                </div>
-              </aside>
+            <div class="section-heading">
+              <p class="eyebrow">Research</p>
+              <h2>Current work</h2>
             </div>
-            <div class="background-panel" id="background">
-              <div class="section-heading">
-                <p class="eyebrow">Background</p>
-                <h2>Brief background from public records</h2>
-              </div>
-              <div class="timeline" id="timeline-list"></div>
-            </div>
+            <div class="focus-grid" id="research-list"></div>
           </section>
 
           <section class="section-block publication-links-section" id="publications">
@@ -172,13 +138,6 @@
                 </div>
                 <div class="source-grid" id="source-list"></div>
               </div>
-              <div class="scholar-panel" id="scholar">
-                <div class="section-heading">
-                  <p class="eyebrow">Scholar</p>
-                  <h2>Google Scholar is the source of publication updates</h2>
-                </div>
-                <a class="section-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Open Scholar profile</a>
-              </div>
             </div>
           </section>
         </div>
@@ -186,8 +145,8 @@
     </main>
 
     <footer class="site-footer">
-      <p>Publication data is kept in sync from the public Google Scholar profile when refreshed.</p>
-      <a href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
+      <p>Personal academic website of Jian-Hai Chen.</p>
+      <a href="#profiles">Profiles and records</a>
     </footer>
 
     <script>

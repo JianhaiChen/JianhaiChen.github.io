@@ -50,6 +50,8 @@ The homepage left column paginates growing lists:
 - Notes show 3 items per page
 - Change these numbers in `app.js` under `paginationState`
 
+Updates and Notes are displayed in the first row of the homepage.
+
 When adding a public note, add a matching `<item>` to `feed.xml` so RSS/email readers can pick it up.
 
 ## Editing site information
@@ -61,7 +63,7 @@ Most personal information is in `site-config.toml`:
 - homepage tagline and short bio
 - profile links
 - research cards
-- research path / timeline
+- selected papers
 - external source links
 
 After editing `site-config.toml`, regenerate the JavaScript file:
@@ -70,7 +72,7 @@ After editing `site-config.toml`, regenerate the JavaScript file:
 python3 build_site_config.py
 ```
 
-Google Scholar-derived metrics and selected papers come from `data.js`, which is generated from `scholar_data.json`.
+Google Scholar-derived publication records come from `data.js`, which is generated from `scholar_data.json`. The homepage selected-paper list is set in `site-config.toml`.
 
 ## Publish
 

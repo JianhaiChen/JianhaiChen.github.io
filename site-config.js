@@ -61,21 +61,22 @@ window.SITE_CONFIG = {
       "text": "Selection, local adaptation, rare variants, and disease-related evolutionary patterns."
     }
   ],
-  "timeline": [
+  "selected_papers": [
     {
-      "date": "2008-2018",
-      "title": "Animal genetics and population genomics",
-      "text": "Porcine miRNA, pig GWAS, mitogenomes, wild boar domestication, and local adaptation."
+      "title": "Evolutionarily new genes in humans with disease phenotypes reveal functional enrichment patterns shaped by adaptive innovation and sexual selection",
+      "label": "Genome Research; first author"
     },
     {
-      "date": "2019-2026",
-      "title": "New gene evolution",
-      "text": "De novo genes, protein evolution, 3D genome architecture, and human disease phenotypes."
+      "title": "Novel mutation leading to splice donor loss in a conserved site of DMD gene causes Duchenne muscular dystrophy with cryptorchidism",
+      "label": "Journal of Medical Genetics"
     },
     {
-      "date": "2024-2026",
-      "title": "MR and GWAS methods",
-      "text": "Methods using summary statistics for causal inference and exposure-by-group interactions."
+      "title": "Functional innovation through new genes as a general evolutionary process",
+      "label": "Nature Genetics"
+    },
+    {
+      "title": "Rapid evolution of protein diversity by de novo origination in Oryza",
+      "label": "Nature Ecology & Evolution"
     }
   ],
   "sources": [
