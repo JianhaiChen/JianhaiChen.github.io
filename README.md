@@ -44,6 +44,12 @@ The homepage includes subscription options:
 - Email updates through Blogtrottr using `feed.xml`
 - Direct RSS subscription through `feed.xml`
 
+The homepage left column paginates growing lists:
+
+- Updates show 2 items per page
+- Notes show 3 items per page
+- Change these numbers in `app.js` under `paginationState`
+
 When adding a public note, add a matching `<item>` to `feed.xml` so RSS/email readers can pick it up.
 
 ## Editing site information

@@ -5,6 +5,10 @@ const config = window.SITE_CONFIG;
 
 const numberFormat = new Intl.NumberFormat("en-US");
 const $ = (selector) => document.querySelector(selector);
+const paginationState = {
+  notices: { page: 0, perPage: 2 },
+  blog: { page: 0, perPage: 3 },
+};
 
 function setText(selector, value) {
   const element = $(selector);
@@ -25,6 +29,50 @@ function highlightAuthor(text) {
     .replace(/\bJH Chen\b/g, "<strong>JH Chen</strong>")
     .replace(/\bJ Chen\b/g, "<strong>J Chen</strong>")
     .replace(/\bJianhai Chen\b/g, "<strong>Jianhai Chen</strong>");
+}
+
+function compactItemTemplate(item) {
+  return `
+    <div class="compact-item">
+      <span>${escapeHtml(item.date)}</span>
+      <h3>${item.url ? `<a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</h3>
+      <p>${escapeHtml(item.text)}</p>
+    </div>
+  `;
+}
+
+function renderPaginatedList(key, items, options) {
+  const state = paginationState[key];
+  const total = items.length;
+  const pageCount = Math.max(1, Math.ceil(total / state.perPage));
+  state.page = Math.max(0, Math.min(state.page, pageCount - 1));
+
+  const start = state.page * state.perPage;
+  const end = Math.min(start + state.perPage, total);
+  const visibleItems = items.slice(start, end);
+
+  $(options.listSelector).innerHTML = visibleItems.map(compactItemTemplate).join("");
+  $(options.countSelector).textContent = `${total} ${total === 1 ? options.singular : options.plural}`;
+  $(options.statusSelector).textContent = total ? `${start + 1}-${end} of ${total}` : "0 of 0";
+
+  const pager = $(options.pagerSelector);
+  const previous = pager.querySelector('[data-page-action="prev"]');
+  const next = pager.querySelector('[data-page-action="next"]');
+  previous.disabled = state.page === 0;
+  next.disabled = state.page >= pageCount - 1;
+}
+
+function bindPagination() {
+  document.querySelectorAll("[data-page-target]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.pageTarget;
+      const action = button.dataset.pageAction;
+      const state = paginationState[key];
+      if (!state) return;
+      state.page += action === "next" ? 1 : -1;
+      renderConfigSections();
+    });
+  });
 }
 
 function renderProfile() {
@@ -51,21 +99,23 @@ function renderProfile() {
 }
 
 function renderConfigSections() {
-  $("#notice-list").innerHTML = (config.notices || []).map((item) => `
-    <div class="compact-item">
-      <span>${escapeHtml(item.date)}</span>
-      <h3>${item.url ? `<a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</h3>
-      <p>${escapeHtml(item.text)}</p>
-    </div>
-  `).join("");
+  renderPaginatedList("notices", config.notices || [], {
+    listSelector: "#notice-list",
+    countSelector: "#notice-count",
+    statusSelector: "#notice-page-status",
+    pagerSelector: "#notice-pager",
+    singular: "update",
+    plural: "updates",
+  });
 
-  $("#blog-list").innerHTML = (config.blog || []).map((item) => `
-    <div class="compact-item">
-      <span>${escapeHtml(item.date)}</span>
-      <h3>${item.url ? `<a href="${escapeHtml(item.url)}">${escapeHtml(item.title)}</a>` : escapeHtml(item.title)}</h3>
-      <p>${escapeHtml(item.text)}</p>
-    </div>
-  `).join("");
+  renderPaginatedList("blog", config.blog || [], {
+    listSelector: "#blog-list",
+    countSelector: "#blog-count",
+    statusSelector: "#blog-page-status",
+    pagerSelector: "#blog-pager",
+    singular: "note",
+    plural: "notes",
+  });
 
   $("#research-list").innerHTML = config.research.map((item) => `
     <article>
@@ -129,4 +179,5 @@ function renderCitationChart() {
 
 renderProfile();
 renderConfigSections();
+bindPagination();
 renderFeatured();
