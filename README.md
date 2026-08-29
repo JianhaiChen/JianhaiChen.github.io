@@ -1,117 +1,72 @@
-# Jian-Hai Chen Academic Website https://jianhaichen.github.io/
+# Jian-Hai Chen Academic Website
 
-Static personal academic website built from the public Google Scholar profile:
+https://jianhaichen.github.io/
 
-https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN
+A hand-edited static site. No JavaScript, no data files, no build step for the
+homepage: every word on the homepage is plain text inside `index.html`.
 
-Open `index.html` in a browser to view the site. The page uses local static files only:
+## Files
 
-- `index.html` for structure
-- `styles.css` for layout and visual design
-- `site-config.toml` for easy editing of homepage metadata
-- `site-config.js` generated from `site-config.toml`
-- `data.js` for Scholar-derived profile/publication data
-- `app.js` for metrics, selected papers, and citation charts
-- `assets/profile.jpg` for the local profile image
-- `blog-posts/` for the one-file blog source files you edit
-- `notes/` for generated blog pages
-- `feed.xml` for RSS subscription to blogs/updates
+- `index.html` — the whole homepage: text, publications, links, JSON-LD
+- `styles.css` — layout and visual design (shared with the blog pages)
+- `assets/profile.jpg` — profile photo
+- `blog-posts/*.md` — blog sources, the only files you edit for blogs
+- `notes/` — generated blog pages, do not hand-edit
+- `feed.xml` — generated RSS feed, do not hand-edit
+- `build_blogs.py` — turns `blog-posts/*.md` into `notes/` and `feed.xml`
+- `robots.txt`, `sitemap.xml` — search engine discovery
+- `google2d2122f30cc65f98.html` — Google Search Console verification, do not delete
 
-The public site keeps the publication section simple: it shows selected papers and links to the full Google Scholar profile.
+## Editing the homepage
 
-## Google Scholar refresh
+Open `index.html` and change the words between the tags. Sections are marked
+with `EDIT:` comments: About, Updates, Blogs, Research, Selected papers, Links.
 
-Google Scholar does not provide an official public API. This repository includes a lightweight scraper for the public profile page, but automated runs may occasionally fail if Google blocks the request.
+Conventions:
 
-Manual refresh:
+- **Updates** (left card) are short news lines: one headline, one sentence.
+- **Blogs** (right card) point at the essays in `notes/`.
+- **Selected papers** are hand-maintained. The full list lives on Google
+  Scholar; this page only shows a curated subset, so a new paper is one copied
+  `<article class="featured-item">` block.
 
-```bash
-python3 parse_scholar.py --fetch > scholar_data.json
-python3 -c "from pathlib import Path; data=Path('scholar_data.json').read_text(encoding='utf-8'); Path('data.js').write_text('window.SCHOLAR_DATA = ' + data + ';\\n', encoding='utf-8')"
-```
-
-Automated refresh:
-
-- GitHub Actions workflow: `.github/workflows/refresh-scholar.yml`
-- Runs weekly on Monday
-- Can also be started manually from GitHub -> Actions -> Refresh Google Scholar data -> Run workflow
-
-## Blogs
-
-Short articles can be added by creating one Markdown text file under `blog-posts/`. Copy `blog-posts/template.md`, rename it, and edit that one file.
-
-The homepage includes subscription options:
-
-- Email updates through Blogtrottr using `feed.xml`
-- Direct RSS subscription through `feed.xml`
-
-After editing a blog source file, run:
+Then commit and push:
 
 ```bash
-./publish.sh "Update blog"
+git add -A && git commit -m "Update homepage" && git push
 ```
 
-This automatically rebuilds the homepage blog card, generated blog pages in `notes/`, the blog index, and the RSS feed, then commits and pushes.
+GitHub Pages redeploys in about a minute.
 
-The homepage blog list paginates growing lists:
-
-- Updates show 2 items per page
-- Blogs show 3 items per page
-- Change these numbers in `app.js` under `paginationState`
-
-The homepage order is About, then Updates and Blogs, then research sections.
-
-Do not hand-edit generated files in `notes/`, `blog-data.js`, or `feed.xml`; they are rebuilt from `blog-posts/*.md`.
-
-## Editing site information
-
-Most personal information is in `site-config.toml`:
-
-- name and aliases
-- affiliation
-- homepage tagline and short bio
-- profile links
-- research cards
-- selected papers
-- external source links
-
-After editing `site-config.toml`, regenerate the JavaScript file:
+## Adding a blog post
 
 ```bash
-python3 build_site_config.py
+cp blog-posts/template.md blog-posts/my-new-post.md
 ```
 
-Google Scholar-derived publication records come from `data.js`, which is generated from `scholar_data.json`. The homepage selected-paper list is set in `site-config.toml`.
-
-## Publish
-
-### GitHub Pages
-
-Recommended for a durable academic homepage.
-
-Automated path:
+Edit the front matter and body, then:
 
 ```bash
-export GITHUB_TOKEN=YOUR_TOKEN
-./deploy_github_pages.sh JianhaiChen
+./publish.sh "Add new blog"
 ```
 
-Manual path:
+That rebuilds `notes/`, the blog index, and `feed.xml`, then commits and pushes.
 
-1. Create a public repository named `JianhaiChen.github.io`.
-2. Upload `index.html`, `styles.css`, `app.js`, `data.js`, `.nojekyll`, `README.md`, and the `assets/` folder.
-3. In the repository, open Settings -> Pages.
-4. Select deployment from the `main` branch root.
-5. Your site will be available at `https://JianhaiChen.github.io/`.
+Supported Markdown: paragraphs, `##` headings, `- ` lists, `> ` blockquotes,
+`---` rules, `**bold**`, `_italic_`, and `[links](https://example.com)`.
 
-### Netlify
+**The homepage blog card is not rebuilt automatically.** After adding a post,
+add a matching `compact-item` block to the Blogs card in `index.html` by hand.
+This is the deliberate cost of keeping the homepage hand-editable.
 
-Fastest no-code option.
+## Search Console
 
-1. Go to https://app.netlify.com/drop.
-2. Drag the website folder or `jianhai-chen-academic-site.zip` into the drop area.
-3. Netlify will publish a free `netlify.app` URL.
+The site is verified through the `google2d2122f30cc65f98.html` file. After
+adding pages, resubmit `sitemap.xml` in Search Console so new URLs get crawled.
 
-### Other free static hosts
+## Note on Google Scholar
 
-Vercel and Cloudflare Pages also work well. Connect a GitHub repository and they will redeploy after every push.
+An earlier version of this site pulled publications from a scraped copy of the
+public Google Scholar profile. That scraper was removed: Google blocks requests
+from GitHub Actions runners, and a failed run silently committed an empty
+publication list. Publications are now written by hand in `index.html`.

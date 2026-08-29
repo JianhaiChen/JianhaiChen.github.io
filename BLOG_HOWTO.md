@@ -29,7 +29,11 @@ Write the blog here.
 ./publish.sh "Add new blog"
 ```
 
-它会自动更新首页 Blogs、博客列表页、单篇网页和 RSS 订阅，然后推送到 GitHub。
+它会自动更新博客列表页、单篇网页和 RSS 订阅，然后推送到 GitHub。
+
+**首页那个 Blogs 卡片不会自动更新。** 新增博客后，还要手动打开 `index.html`，
+在 Blogs 卡片里照着已有的 `compact-item` 复制一段。这是首页改成纯手写静态之后
+的代价 —— 换来的是首页每个字都能直接改。
 
 ## 修改已有博客
 
@@ -45,4 +49,4 @@ open blog-posts/south-asian-wild-boar-and-pig.md
 ./publish.sh "Update blog"
 ```
 
-不要手动修改 `notes/`、`blog-data.js`、`feed.xml`，这些文件都会自动生成。
+不要手动修改 `notes/` 和 `feed.xml`，这些文件都会自动生成。

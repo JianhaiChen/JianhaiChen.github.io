@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-import json
 import re
-import subprocess
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from email.utils import format_datetime
@@ -260,22 +258,6 @@ def render_index(posts: list[Post]) -> None:
   (OUTPUT_DIR / "index.html").write_text(html, encoding="utf-8")
 
 
-def render_blog_data(posts: list[Post]) -> None:
-  data = [
-    {
-      "date": post.category,
-      "title": post.title,
-      "text": post.summary,
-      "url": post.url,
-    }
-    for post in posts
-  ]
-  (ROOT / "blog-data.js").write_text(
-    "window.BLOG_DATA = " + json.dumps(data, ensure_ascii=False, indent=2) + ";\n",
-    encoding="utf-8",
-  )
-
-
 def render_feed(posts: list[Post]) -> None:
   latest = posts[0].sort_date if posts else datetime.now(timezone.utc)
   items = "\n".join(
@@ -309,9 +291,7 @@ def main() -> None:
   for post in posts:
     render_post(post)
   render_index(posts)
-  render_blog_data(posts)
   render_feed(posts)
-  subprocess.run(["python3", "build_site_config.py"], cwd=ROOT, check=True)
   print(f"Built {len(posts)} blog post(s)")
 
 
