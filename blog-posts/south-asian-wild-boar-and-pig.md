@@ -2,7 +2,7 @@
 title: South Asian wild boar and pig genomics
 slug: south-asian-wild-boar-and-pig
 date: 2026-05-10
-category: Project story / Under review
+category: Project story / Accepted by Science
 summary: A ten-year project on wild boar origin, domestic pigs, and population genomics.
 ---
 
@@ -16,7 +16,7 @@ In 2014, while I was affiliated with the College of Animal Science and Technolog
 
 The project was fortunate to receive strong support from my mentor Dr. Shuhong Zhao, and important academic insights from Dr. Jianlin Han and many coauthors, including Dr. Xiaoyong Du, Dr. Zhuqing Zheng, and others. Over the years, the work moved with me across different stages, including my later time in the Department of Ecology and Evolution at the University of Chicago. The analysis gradually became more than a regional population genetics project; it became a way to revisit a long-standing story about wild boar history.
 
-Our manuscript has now been written and submitted. The review process has already taken about two years, and the paper is still under review. The current title is: **_Out of South Asia_ migration of global wild boar: distinctive genomic profile of wild boar and domestic pig populations in South Asia**. In this work, we present evidence supporting an _Out of South Asia_ origin for global wild boar populations, offering an alternative possibility to the traditional historical narrative.
+Our manuscript has now been written and submitted. The review process has already taken about two years, and the paper is accepted in Science. The current title is: **_Out of South Asia_ migration of global wild boar: distinctive genomic profile of wild boar and domestic pig populations in South Asia**. In this work, we present evidence supporting an _Out of South Asia_ origin for global wild boar populations, offering an alternative possibility to the traditional historical narrative.
 
 Welcome to the South-Asian-Wild-boar-and-pig research project. The primary dataset is available on [Zenodo](https://zenodo.org/records/10529160), and the project documentation and population genomics pipeline are collected in the [GitHub Wiki](https://github.com/JianhaiChen/South-Asian-Wild-boar-and-pig/wiki).
 
