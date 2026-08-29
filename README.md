@@ -1,4 +1,4 @@
-# Jian-Hai Chen Academic Website
+# Jian-Hai Chen Academic Website https://jianhaichen.github.io/
 
 Static personal academic website built from the public Google Scholar profile:
 
