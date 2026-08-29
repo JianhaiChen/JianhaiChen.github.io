@@ -1,12 +1,67 @@
 <!doctype html>
+<!--
+  ============================================================
+  HOW TO EDIT  -  no build step, no JavaScript.
+  Every word on this page is plain text inside this one file.
+  Open it, change the words between the tags, save, then run
+  ./publish.sh "what you changed"   (or: git add -A && git commit && git push)
+  Sections are marked with  <!== EDIT ==>  comments below.
+  ============================================================
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jian-Hai Chen</title>
-    <meta name="description" content="Personal academic website of Jian-Hai Chen.">
+    <title>Jian-Hai Chen (Jianhai Chen) | Evolutionary and statistical genomics, UC Irvine</title>
+    <meta name="description" content="Jian-Hai Chen (Jianhai Chen), University of California, Irvine. Research on new gene evolution, population genetics, 3D genome organization, GWAS, and Mendelian randomization.">
+    <meta name="author" content="Jian-Hai Chen">
+    <link rel="canonical" href="https://jianhaichen.github.io/">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Jian-Hai Chen (Jianhai Chen) - Evolutionary and statistical genomics">
+    <meta property="og:description" content="Research on new gene evolution, population genetics, 3D genome organization, GWAS, and Mendelian randomization. University of California, Irvine.">
+    <meta property="og:url" content="https://jianhaichen.github.io/">
+    <meta property="og:image" content="https://jianhaichen.github.io/assets/profile.jpg">
+    <meta name="twitter:card" content="summary">
     <link rel="alternate" type="application/rss+xml" title="Jian-Hai Chen Blogs" href="feed.xml">
-    <link rel="stylesheet" href="styles.css?v=20260510-4">
+    <link rel="stylesheet" href="styles.css?v=20260829">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jian-Hai Chen",
+  "alternateName": [
+    "Jianhai Chen",
+    "陈俭海",
+    "JH Chen"
+  ],
+  "url": "https://jianhaichen.github.io/",
+  "image": "https://jianhaichen.github.io/assets/profile.jpg",
+  "jobTitle": "Researcher",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "University of California, Irvine"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "University of California, Irvine"
+  },
+  "email": "mailto:jianhaic@uci.edu",
+  "knowsAbout": [
+    "Evolutionary genomics",
+    "New gene evolution",
+    "Population genetics",
+    "3D genome organization",
+    "GWAS",
+    "Mendelian randomization",
+    "Statistical genetics"
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=1-onMXMAAAAJ",
+    "https://orcid.org/0000-0003-0093-2003",
+    "https://github.com/JianhaiChen"
+  ]
+}
+    </script>
   </head>
   <body>
     <header class="site-header" aria-label="Site navigation">
@@ -16,26 +71,37 @@
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#about">About</a>
+        <a href="#research">Research</a>
         <a href="#publications">Papers</a>
-        <a href="#profiles">Profiles</a>
+        <a href="notes/">Blogs</a>
       </nav>
     </header>
 
     <main id="top">
+
+      <!-- =============== EDIT: name, one-line pitch, bio =============== -->
       <section class="front-section" id="about">
         <article class="front-card bio-card">
-          <img class="bio-photo" src="assets/profile.jpg" alt="Portrait of Jian-Hai Chen">
+          <img class="bio-photo" src="assets/profile.jpg" alt="Portrait of Jian-Hai Chen" width="220" height="220">
           <div class="bio-text">
-            <p class="eyebrow" id="hero-eyebrow">Jian-Hai Chen / Jianhai Chen</p>
-            <h1 id="hero-title">Evolutionary genomics, statistical genetics, and human disease.</h1>
-            <p class="lead" id="hero-bio">
-              I work on questions around new gene evolution, population genetics, 3D genome
-              organization, GWAS, and Mendelian randomization.
+            <p class="eyebrow">Jian-Hai Chen / Jianhai Chen / &#38472;&#20461;&#28023;</p>
+            <h1>Evolutionary genomics, statistical genetics, and human disease</h1>
+            <p class="lead">
+              I am a researcher at the University of California, Irvine. I work on new gene
+              evolution, population genetics, 3D genome organization, GWAS, and Mendelian
+              randomization, connecting genome evolution to medical, agricultural, and
+              conservation problems.
             </p>
-            <p class="profile-affiliation" id="profile-affiliation">University of California, Irvine</p>
-            <div class="profile-tags" id="profile-tags" aria-label="Research interests"></div>
-            <div class="hero-actions" id="hero-links">
-              <a class="primary-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Google Scholar</a>
+            <p class="profile-affiliation">University of California, Irvine &middot; jianhaic@uci.edu</p>
+            <div class="profile-tags" aria-label="Research interests">
+              <span class="tag">New gene evolution</span>
+              <span class="tag">Population genetics</span>
+              <span class="tag">3D genomics</span>
+              <span class="tag">GWAS</span>
+              <span class="tag">Mendelian randomization</span>
+            </div>
+            <div class="hero-actions">
+              <a class="primary-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&amp;hl=en">Google Scholar</a>
               <a class="secondary-link" href="https://orcid.org/0000-0003-0093-2003">ORCID</a>
               <a class="secondary-link" href="https://github.com/JianhaiChen">GitHub</a>
             </div>
@@ -44,52 +110,62 @@
       </section>
 
       <section class="activity-row" aria-label="Updates and blogs">
+
+        <!-- =============== EDIT: news items. Copy one block to add one. =============== -->
         <article class="front-card notice-card" id="notices">
           <div class="card-heading">
             <div>
               <p class="eyebrow">Notices</p>
               <h2>Updates</h2>
             </div>
-            <span class="item-count" id="notice-count">0 updates</span>
           </div>
-          <div class="compact-list" id="notice-list"></div>
-          <div class="pager" id="notice-pager" aria-label="Updates pagination">
-            <button type="button" data-page-target="notices" data-page-action="prev" aria-label="Previous updates">
-              <span aria-hidden="true">&lt;</span>
-            </button>
-            <span id="notice-page-status">1 / 1</span>
-            <button type="button" data-page-target="notices" data-page-action="next" aria-label="Next updates">
-              <span aria-hidden="true">&gt;</span>
-            </button>
+          <div class="compact-list">
+            <div class="compact-item">
+              <span>August 2026</span>
+              <h3><a href="notes/why-are-common-diseases-common.html">Disease prevalence and reproductive fitness submitted to Nature Genetics</a></h3>
+              <p>Work asking why some human diseases are common and others rare, through the coupling between disease-associated genetic variation and reproductive fitness. A preprint is in production at Research Square.</p>
+            </div>
+            <div class="compact-item">
+              <span>August 2026</span>
+              <h3><a href="notes/south-asian-wild-boar-and-pig.html">&ldquo;Out of South Asia&rdquo; wild boar paper accepted by Science</a></h3>
+              <p>A project started in 2014 on South Asian wild boars and domestic pigs has been accepted by Science. It presents evidence for an Out of South Asia origin of global wild boar populations. Data are on Zenodo and the pipeline is documented in the GitHub Wiki.</p>
+            </div>
+            <div class="compact-item">
+              <span>May 2026</span>
+              <h3>New work at UCI: maize 3D genomics</h3>
+              <p>At UCI I am working on maize 3D genome organization, using newly generated data from the maize NAM population to study population-level variation in genome architecture.</p>
+            </div>
           </div>
         </article>
 
+        <!-- =============== EDIT: blog links. Blog pages live in notes/ =============== -->
         <article class="front-card blog-card" id="blog">
           <div class="card-heading">
             <div>
               <p class="eyebrow">Blog</p>
               <h2>Blogs</h2>
             </div>
-            <span class="item-count" id="blog-count">0 blogs</span>
           </div>
-          <div class="compact-list" id="blog-list"></div>
-          <div class="pager" id="blog-pager" aria-label="Blog pagination">
-            <button type="button" data-page-target="blog" data-page-action="prev" aria-label="Previous blogs">
-              <span aria-hidden="true">&lt;</span>
-            </button>
-            <span id="blog-page-status">1 / 1</span>
-            <button type="button" data-page-target="blog" data-page-action="next" aria-label="Next blogs">
-              <span aria-hidden="true">&gt;</span>
-            </button>
+          <div class="compact-list">
+            <div class="compact-item">
+              <span>Project story / Submitted to Nature Genetics</span>
+              <h3><a href="notes/why-are-common-diseases-common.html">Why are common diseases common?</a></h3>
+              <p>Why some human diseases are common and others rare, and how disease-associated genetic variation is coupled to reproductive fitness.</p>
+            </div>
+            <div class="compact-item">
+              <span>Project story / Accepted by Science</span>
+              <h3><a href="notes/south-asian-wild-boar-and-pig.html">South Asian wild boar and pig genomics</a></h3>
+              <p>A ten-year project on wild boar origin, domestic pigs, and population genomics.</p>
+            </div>
           </div>
           <div class="blog-actions">
-            <a class="section-link" href="notes/">Open blogs</a>
+            <a class="section-link" href="notes/">All blogs</a>
           </div>
           <div class="subscribe-box" aria-label="Subscribe to blogs">
             <p>Subscribe to new blogs</p>
             <div class="subscribe-actions">
               <form action="https://blogtrottr.com/" method="get">
-                <input type="hidden" name="subscribe" value="https://JianhaiChen.github.io/feed.xml">
+                <input type="hidden" name="subscribe" value="https://jianhaichen.github.io/feed.xml">
                 <button class="icon-link" type="submit">
                   <svg viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M4 6h16v12H4z"></path>
@@ -112,31 +188,170 @@
       </section>
 
       <div class="content-shell research-only-shell">
-        <div class="research-column" id="research">
-          <section class="section-block research-section">
+        <div class="research-column">
+
+          <!-- =============== EDIT: research themes =============== -->
+          <section class="section-block research-section" id="research">
             <div class="section-heading">
               <p class="eyebrow">Research</p>
               <h2>Current work</h2>
             </div>
-            <div class="focus-grid" id="research-list"></div>
+            <div class="focus-grid">
+              <article>
+                <h3>New genes and genome evolution</h3>
+                <p>De novo gene origination, duplicated genes, enhancer capture, and functional innovation.</p>
+              </article>
+              <article>
+                <h3>Statistical genetics</h3>
+                <p>GWAS summary statistics, Mendelian randomization, and genetic evidence for causal inference.</p>
+              </article>
+              <article>
+                <h3>Population and medical genomics</h3>
+                <p>Selection, local adaptation, rare variants, and disease-related evolutionary patterns.</p>
+              </article>
+              <article>
+                <h3>3D genome organization</h3>
+                <p>Chromatin architecture in maize NAM lines and its role in gene duplication and regulation.</p>
+              </article>
+            </div>
           </section>
 
+          <!-- =============== EDIT: selected papers. Copy an <article> to add one. =============== -->
           <section class="section-block publication-links-section" id="publications">
             <div class="section-heading with-action">
               <div>
                 <p class="eyebrow">Publications</p>
                 <h2>Selected papers</h2>
               </div>
-              <a class="section-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&hl=zh-CN">Full list on Google Scholar</a>
+              <a class="section-link" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&amp;hl=en">Full list on Google Scholar</a>
             </div>
-            <div class="featured-list" id="featured-list"></div>
+            <div class="featured-list">
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2026</span>
+            <span>Nature Ecology &amp; Evolution</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=1-onMXMAAAAJ:UxriW0iASnsC">Analysis of the impact of gene evolution on reproductive effects reveals prevalent sexual and germline–soma conflicts</a>
+          <p class="featured-authors">SAML Shengqian Xia, Deanna Arsala, Andrea Gschwend, William Koval, Jared ...</p>
+          <p class="featured-venue">Nature Ecology and Evolution, 2026</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2026</span>
+            <span>American Journal of Human Genetics</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=1-onMXMAAAAJ:dshw04ExmUIC">A flexible and unified framework for single-and multi-outcome Mendelian randomization using summary statistics</a>
+          <p class="featured-authors">B Kang, D Li, K Xu, <strong>J Chen</strong>, S Feng, J Wang, G Gao, S Tasaki, BL Pierce, ...</p>
+          <p class="featured-venue">The American Journal of Human Genetics, 2026</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2025</span>
+            <span>Nature Genetics</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;citation_for_view=1-onMXMAAAAJ:a0OBvERweLwC">Functional innovation through new genes as a general evolutionary process</a>
+          <p class="featured-authors">S Xia, <strong>J Chen</strong>, D Arsala, JJ Emerson, M Long</p>
+          <p class="featured-venue">Nature genetics 57 (2), 295-309, 2025</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2025</span>
+            <span>Genome Research &middot; first author</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=1-onMXMAAAAJ:NMxIlDl6LWMC">Evolutionarily new genes in humans with disease phenotypes reveal functional enrichment patterns shaped by adaptive innovation and sexual selection</a>
+          <p class="featured-authors"><strong>JH Chen</strong>, P Landback, D Arsala, A Guzzetta, S Xia, J Atlas, C Dong, ...</p>
+          <p class="featured-venue">Genome Research, 2025</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2025</span>
+            <span>Genetics Selection Evolution &middot; first author</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=1-onMXMAAAAJ:NhqRSupF_l8C">Positive selection on rare variants of IGF1R and BRD4 underlying the cold adaptation of wild boar</a>
+          <p class="featured-authors"><strong>J Chen</strong>, I Jakovlić, M Sablin, S Xia, Z Xu, Y Guo, R Kuang, J Zhong, Y Jia, ...</p>
+          <p class="featured-venue">Genetics Selection Evolution 57 (1), 40, 2025</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2025</span>
+            <span>Cell Genomics</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=1-onMXMAAAAJ:xtRiw3GOFMkC">Genomic Insights into the Demographic History and Local Adaptation of Wild Boars Across Eurasia</a>
+          <p class="featured-authors">Z Wang, Z Li, T Huang, <strong>J Chen</strong>, P Xu, R Qiao, H Yin, C Song, D Zhang, ...</p>
+          <p class="featured-venue">Cell Genomics, 2025.02. 05.636574, 2025</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2024</span>
+            <span>Genome Biology and Evolution &middot; first author</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;citation_for_view=1-onMXMAAAAJ:pqnbT2bcN3wC">The rapid evolution of de novo proteins in structure and complex</a>
+          <p class="featured-authors"><strong>J Chen</strong>, Q Li, S Xia, D Arsala, D Sosa, D Wang, M Long</p>
+          <p class="featured-venue">Genome Biology and Evolution 16 (6), evae107, 2024</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2024</span>
+            <span>Science Advances</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=1-onMXMAAAAJ:_xSYboBqXhAC">The three-dimensional genome drives the evolution of asymmetric gene duplicates via enhancer capture-divergence</a>
+          <p class="featured-authors">UJ Lee, D Arsala, S Xia, C Li, M Ali, N Svetec, CB Langer, DR Sobreira, ...</p>
+          <p class="featured-venue">Science Advances 10 (51), eadn6625, 2024</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2024</span>
+            <span>Seminars in Cell &amp; Developmental Biology</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=1-onMXMAAAAJ:O3NaXMp0MMsC">Sexual conflict drive in the rapid evolution of new gametogenesis genes</a>
+          <p class="featured-authors">NW VanKuren, <strong>J Chen</strong>, M Long</p>
+          <p class="featured-venue">Seminars in Cell &amp; Developmental Biology 159, 27-37, 2024</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2024</span>
+            <span>Journal of Medical Genetics &middot; first author</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=1-onMXMAAAAJ:2P1L_qKh6hAC">Novel mutation leading to splice donor loss in a conserved site of DMD gene causes Duchenne muscular dystrophy with cryptorchidism</a>
+          <p class="featured-authors"><strong>J Chen</strong>, Y Jia, J Zhong, K Zhang, H Dai, GG He, F Li, L Zeng, C Fan, H Xu</p>
+          <p class="featured-venue">Journal of Medical Genetics, 2024.01. 29.24301909, 2024</p>
+        </article>
+        <article class="featured-item">
+          <div class="featured-meta">
+            <span>2019</span>
+            <span>Nature Ecology &amp; Evolution</span>
+          </div>
+          <a class="featured-title" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=1-onMXMAAAAJ&amp;citation_for_view=1-onMXMAAAAJ:4TOpqqG69KYC">Rapid evolution of protein diversity by de novo origination in Oryza</a>
+          <p class="featured-authors">L Zhang, Y Ren, T Yang, G Li, <strong>J Chen</strong>, AR Gschwend, Y Yu, G Hou, J Zi, ...</p>
+          <p class="featured-venue">Nature ecology &amp; evolution 3 (4), 679-690, 2019</p>
+        </article>
+            </div>
+
+            <!-- =============== EDIT: profile links =============== -->
             <div class="profiles-scholar-grid">
               <div class="profiles-panel" id="profiles">
                 <div class="section-heading">
                   <p class="eyebrow">Links</p>
                   <h2>Profiles and records</h2>
                 </div>
-                <div class="source-grid" id="source-list"></div>
+                <div class="source-grid">
+                  <a class="source-item" href="https://scholar.google.com/citations?user=1-onMXMAAAAJ&amp;hl=en">
+                    <span>Profile</span>
+                    <strong>Google Scholar</strong>
+                  </a>
+                  <a class="source-item" href="https://orcid.org/0000-0003-0093-2003">
+                    <span>Identifier</span>
+                    <strong>ORCID</strong>
+                  </a>
+                  <a class="source-item" href="https://github.com/JianhaiChen">
+                    <span>Code</span>
+                    <strong>GitHub</strong>
+                  </a>
+                  <a class="source-item" href="mailto:jianhaic@uci.edu">
+                    <span>Contact</span>
+                    <strong>jianhaic@uci.edu</strong>
+                  </a>
+                </div>
               </div>
             </div>
           </section>
@@ -145,16 +360,8 @@
     </main>
 
     <footer class="site-footer">
-      <p>Personal academic website of Jian-Hai Chen.</p>
+      <p>Jian-Hai Chen (Jianhai Chen) &middot; University of California, Irvine</p>
       <a href="#profiles">Profiles and records</a>
     </footer>
-
-    <script>
-      const cacheVersion = Date.now();
-      document.write(`<script src="site-config.js?v=${cacheVersion}"><\/script>`);
-      document.write(`<script src="blog-data.js?v=${cacheVersion}"><\/script>`);
-      document.write(`<script src="data.js?v=${cacheVersion}"><\/script>`);
-      document.write(`<script src="app.js?v=${cacheVersion}"><\/script>`);
-    </script>
   </body>
 </html>

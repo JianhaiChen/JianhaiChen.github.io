@@ -94,28 +94,66 @@ def inline_markdown(text: str) -> str:
 def markdown_to_html(markdown: str) -> str:
   blocks: list[str] = []
   paragraph: list[str] = []
+  bullets: list[str] = []
+  quote: list[str] = []
 
   def flush_paragraph() -> None:
     if paragraph:
       blocks.append(f"<p>{inline_markdown(' '.join(paragraph))}</p>")
       paragraph.clear()
 
+  def flush_bullets() -> None:
+    if bullets:
+      items = "".join(f"<li>{inline_markdown(item)}</li>" for item in bullets)
+      blocks.append(f"<ul>{items}</ul>")
+      bullets.clear()
+
+  def flush_quote() -> None:
+    if quote:
+      blocks.append(f"<blockquote><p>{inline_markdown(' '.join(quote))}</p></blockquote>")
+      quote.clear()
+
+  def flush_all() -> None:
+    flush_paragraph()
+    flush_bullets()
+    flush_quote()
+
   for raw_line in markdown.splitlines():
     line = raw_line.strip()
     if not line:
+      flush_all()
+      continue
+    if line.startswith("- "):
       flush_paragraph()
+      flush_quote()
+      bullets.append(line[2:])
+      continue
+    # an indented line right after a bullet continues that bullet
+    if bullets and raw_line[:1].isspace():
+      bullets[-1] += " " + line
+      continue
+    if line.startswith("> "):
+      flush_paragraph()
+      flush_bullets()
+      quote.append(line[2:])
+      continue
+    if line == "---":
+      flush_all()
+      blocks.append("<hr>")
       continue
     if line.startswith("## "):
-      flush_paragraph()
+      flush_all()
       blocks.append(f"<h2>{inline_markdown(line[3:])}</h2>")
       continue
     if line.startswith("# "):
-      flush_paragraph()
+      flush_all()
       blocks.append(f"<h2>{inline_markdown(line[2:])}</h2>")
       continue
+    flush_bullets()
+    flush_quote()
     paragraph.append(line)
 
-  flush_paragraph()
+  flush_all()
   return "\n        ".join(blocks)
 
 

@@ -862,6 +862,36 @@ h3 {
   line-height: 1.72;
 }
 
+.note-page ul {
+  margin: 0 0 18px;
+  padding-left: 22px;
+  color: #3f474b;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.note-page li {
+  margin-bottom: 10px;
+}
+
+.note-page blockquote {
+  margin: 0 0 18px;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+}
+
+.note-page blockquote p {
+  margin: 0;
+  font-size: 17px;
+}
+
+.note-page hr {
+  margin: 32px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
 .citation-chart {
   display: grid;
   grid-template-columns: repeat(14, minmax(28px, 1fr));
