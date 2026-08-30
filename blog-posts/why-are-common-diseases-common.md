@@ -25,10 +25,10 @@ enormous value on experimental precision: perturb a gene, control the genetic
 background, observe the phenotype, and use reverse genetics to establish
 mechanism.
 
-That approach is extraordinarily powerful. But I became increasingly
-suspicious about a view I sometimes heared that human genetic studies
-are inherently less rigorous or less informative because humans cannot be
-experimentally manipulated with the precision possible in model organisms.
+That approach is extraordinarily powerful. But it always surprised me to
+hear the view that human genetic studies are inherently less rigorous or
+less informative because humans cannot be experimentally manipulated with
+the precision possible in model organisms.
 
 My experience in human rare-disease genomics led me to a different but optimistic view.
 

@@ -1130,3 +1130,29 @@ h3 {
     padding: 24px 20px;
   }
 }
+
+/* Owner-only edit bar: hidden until the URL ends in #edit. */
+.edit-bar {
+  display: none;
+}
+
+.edit-bar:target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 0.9rem;
+}
+
+.edit-bar a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.85rem;
+  font-size: 0.85rem;
+  color: var(--accent-strong);
+  background: var(--surface);
+}
+
+.edit-bar a:hover {
+  border-color: var(--accent);
+}
