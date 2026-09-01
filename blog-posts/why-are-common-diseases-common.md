@@ -2,7 +2,7 @@
 title: Why are common diseases common?
 slug: why-are-common-diseases-common
 date: 2026-08-29
-category: Project story / Submitted to Nature Communications
+category: Project story / Manuscript under review
 summary: Why some human diseases are common and others rare, and how disease-associated genetic variation is coupled to reproductive fitness.
 ---
 
@@ -238,8 +238,8 @@ help explain variation in human disease prevalence.**
 
 Long live evolutionary biology.
 
-The manuscript was submitted to *Nature Communications* in September 2026;
-a preprint is in production at Research Square.
+The manuscript is under review; a preprint is in production at
+Research Square.
 
 ---
 
