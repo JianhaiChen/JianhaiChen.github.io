@@ -85,6 +85,7 @@ def inline_markdown(text: str) -> str:
   text = re.sub(r"\*\*\_(.+?)\_\*\*", r"<strong><em>\1</em></strong>", text)
   text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
   text = re.sub(r"\_(.+?)\_", r"<em>\1</em>", text)
+  text = re.sub(r"\*(?!\s)(.+?)(?<!\s)\*", r"<em>\1</em>", text)
   text = re.sub(r"\[(.+?)\]\((https?://[^)]+)\)", r'<a href="\2">\1</a>', text)
   return text
 
