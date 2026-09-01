@@ -22,7 +22,7 @@
 
     <main>
       <article class="section-block note-page">
-        <p class="eyebrow">Project story / Submitted to Nature Genetics</p>
+        <p class="eyebrow">Project story / Submitted to Nature Communications</p>
         <h1>Why are common diseases common?</h1>
         <p class="lead">Why some human diseases are common and others rare, and how disease-associated genetic variation is coupled to reproductive fitness.</p>
         <blockquote><p>&quot;Nothing in biology makes sense except in the light of evolution.&quot;</p></blockquote>
@@ -31,7 +31,7 @@
         <p><strong>Why are some diseases common while others are rare?</strong></p>
         <h2>Where this question came from</h2>
         <p>My background is in evolutionary genetics. Earlier in my career, I worked in a *Drosophila* laboratory, where I was trained in a tradition that places enormous value on experimental precision: perturb a gene, control the genetic background, observe the phenotype, and use reverse genetics to establish mechanism.</p>
-        <p>That approach is extraordinarily powerful. But it always surprised me to hear the view that human genetic studies are inherently less rigorous or less informative because humans cannot be experimentally manipulated with the precision possible in model organisms.</p>
+        <p>That approach is extraordinarily powerful. But I became increasingly surprised about a view I sometimes heard that human genetic studies are inherently less rigorous or less informative because humans cannot be experimentally manipulated with the precision possible in model organisms.</p>
         <p>My experience in human rare-disease genomics led me to a different but optimistic view.</p>
         <p>Human genetics comes with a different kind of scientific resource: an enormous natural record accumulated through centuries of medicine and, more recently, through life-course and population-scale genomics. Human phenotypes have been observed across diseases, organs, ages, environments, populations, and generations at a scale and breadth that no experimental model can reproduce.</p>
         <p>Consider Duchenne muscular dystrophy. Generations of physicians, geneticists, pathologists, molecular biologists, and families have collectively characterized its incidence, inheritance, natural history, reproductive consequences, molecular pathology, and clinical progression. It would be extraordinarily difficult to reproduce that depth of accumulated knowledge for a single analogous phenotype in a model organism, let alone for thousands of phenotypes.</p>
@@ -52,7 +52,7 @@
         <p>That led me to ask something that seemed almost too simple:</p>
         <p>What does prevalence mean in evolutionary terms? Why does one genetic disease remain extremely rare while another complex disease affects millions of people?</p>
         <h2>From disease genetics to population genetics</h2>
-        <p>When I began working with Lin Chen and became more deeply involved in statistical genetics and genomic epidemiology, I returned to this question.</p>
+        <p>When I worked with Lin Chen and became more deeply involved in statistical genetics and genomic epidemiology, I returned to this question.</p>
         <p>It became apparent that the question could not be answered by experimental manipulation of a model organism. What made it tractable was precisely the feature of human genetics that is sometimes regarded as its weakness: we cannot design the experiment.</p>
         <p>Instead, millions of naturally occurring genetic perturbations have already happened. Recombination has reshuffled them across generations. Natural selection has acted on them. Physicians have recorded their phenotypic consequences. Biobanks have measured disease and reproduction in hundreds of thousands of individuals. GWAS and molecular QTL studies have connected those phenotypes back to genetic variation.</p>
         <p>The experiment, in a sense, has been running for generations. The challenge is to extract its signal.</p>
@@ -63,11 +63,17 @@
         <h2>Testing the idea</h2>
         <p>The first stage of this work characterized disease–fertility genetic coupling across 97 complex diseases. The broader question became testable when large-scale disease prevalence data could be integrated with genomic estimates of reproductive effects.</p>
         <p>Across thousands of diseases, a systematic pattern emerged. Disease prevalence increased with more antagonistic disease–fertility coupling: genetic effects associated with increased disease liability were also associated with greater reproductive success. Conversely, prevalence decreased with synergistic coupling, in which disease-increasing effects were associated with reduced reproductive success.</p>
-        <p>The same evolutionary logic also led us to examine differences between male and female reproductive effects, revealing widespread sexually antagonistic effects among disease-associated genes.</p>
+        <h2>A classical evolutionary explanation: age-dependent selection</h2>
+        <p>There is an older and far better established evolutionary explanation for the persistence of deleterious variation. The force of natural selection declines with age, so deleterious effects expressed later in life may experience weaker purifying selection than those expressed earlier. This selection shadow provides a classical route by which late-acting deleterious variation can persist.</p>
+        <p>Disease–fertility coupling addresses a different dimension of the same problem. Age of onset asks *when* the health costs of genetic variation are exposed to selection. Fertility coupling asks *what* reproductive consequences accompany those costs — whether selection through reproduction opposes or reinforces them. The two mechanisms are therefore complementary, and the relevant test is whether disease–fertility coupling predicts prevalence after accounting for disease onset and severity.</p>
+        <p>We tested this across diseases with registry estimates of age at first recorded event and five-year mortality. Age at first recorded event showed a significant but non-monotonic relationship with prevalence. Prevalence declined from earlier- to mid-life disease and increased again among diseases first recorded later in life. The late-life increase was consistent with weaker purifying selection against deleterious effects expressed at older ages, but the overall relationship was more complex than a simple monotonic prediction from declining selection with age.</p>
+        <p>Against this background, disease–fertility coupling remained strongly associated with prevalence after accounting jointly for disease onset, mortality and disease category. This relationship was also present among diseases first recorded early, in mid-life and later in life, indicating that disease–fertility coupling was not simply capturing differences in disease onset.</p>
+        <p>This distinction sharpened the evolutionary interpretation of the project. When a disease manifests influences how strongly its deleterious effects are exposed to selection; what the underlying genetic variation does to reproduction influences whether selection through fertility opposes or reinforces those effects. Both can shape the evolutionary fate of disease-associated variation.</p>
+        <p>The same logic also led us to ask whether reproductive consequences differ between the sexes. They do: disease-associated genes showed widespread sexually antagonistic effects, suggesting that variation detrimental in one sex may sometimes be maintained through reproductive benefits in the other.</p>
         <p>What began as a question raised by rare-disease genetics therefore became a population-level evolutionary hypothesis:</p>
-        <p><strong>The reproductive consequences of disease-associated genetic variation may help explain why some human diseases are common while others remain rare.</strong></p>
+        <p><strong>The reproductive consequences of disease-associated genetic variation may help explain variation in human disease prevalence.</strong></p>
         <p>Long live evolutionary biology.</p>
-        <p>This work has been submitted to *Nature Genetics*, and a preprint is in production at Research Square.</p>
+        <p>The manuscript was submitted to *Nature Communications* in September 2026; a preprint is in production at Research Square.</p>
         <hr>
         <p>Repository layout and per-script notes: <a href="https://github.com/JianhaiChen/HumanDiseaseFertilityPleiotropy/blob/main/CONTENTS.md">CONTENTS.md</a></p>
         <p>Code and documentation: <a href="https://github.com/JianhaiChen/HumanDiseaseFertilityPleiotropy">HumanDiseaseFertilityPleiotropy on GitHub</a>.</p>

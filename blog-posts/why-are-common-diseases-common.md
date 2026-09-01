@@ -2,7 +2,7 @@
 title: Why are common diseases common?
 slug: why-are-common-diseases-common
 date: 2026-08-29
-category: Project story / Submitted to Nature Genetics
+category: Project story / Submitted to Nature Communications
 summary: Why some human diseases are common and others rare, and how disease-associated genetic variation is coupled to reproductive fitness.
 ---
 
@@ -25,10 +25,10 @@ enormous value on experimental precision: perturb a gene, control the genetic
 background, observe the phenotype, and use reverse genetics to establish
 mechanism.
 
-That approach is extraordinarily powerful. But it always surprised me to
-hear the view that human genetic studies are inherently less rigorous or
-less informative because humans cannot be experimentally manipulated with
-the precision possible in model organisms.
+That approach is extraordinarily powerful. But I became increasingly
+surprised about a view I sometimes heard that human genetic studies
+are inherently less rigorous or less informative because humans cannot be
+experimentally manipulated with the precision possible in model organisms.
 
 My experience in human rare-disease genomics led me to a different but optimistic view.
 
@@ -186,20 +186,60 @@ reproductive success. Conversely, prevalence decreased with synergistic
 coupling, in which disease-increasing effects were associated with reduced
 reproductive success.
 
-The same evolutionary logic also led us to examine differences between male and
-female reproductive effects, revealing widespread sexually antagonistic effects
-among disease-associated genes.
+## A classical evolutionary explanation: age-dependent selection
+
+There is an older and far better established evolutionary explanation for the
+persistence of deleterious variation. The force of natural selection declines
+with age, so deleterious effects expressed later in life may experience weaker
+purifying selection than those expressed earlier. This selection shadow
+provides a classical route by which late-acting deleterious variation can
+persist.
+
+Disease–fertility coupling addresses a different dimension of the same problem.
+Age of onset asks *when* the health costs of genetic variation are exposed to
+selection. Fertility coupling asks *what* reproductive consequences accompany
+those costs — whether selection through reproduction opposes or reinforces
+them. The two mechanisms are therefore complementary, and the relevant test is
+whether disease–fertility coupling predicts prevalence after accounting for
+disease onset and severity.
+
+We tested this across diseases with registry estimates of age at first recorded
+event and five-year mortality. Age at first recorded event showed a significant
+but non-monotonic relationship with prevalence. Prevalence declined from
+earlier- to mid-life disease and increased again among diseases first recorded
+later in life. The late-life increase was consistent with weaker purifying
+selection against deleterious effects expressed at older ages, but the overall
+relationship was more complex than a simple monotonic prediction from declining
+selection with age.
+
+Against this background, disease–fertility coupling remained strongly
+associated with prevalence after accounting jointly for disease onset,
+mortality and disease category. This relationship was also present among
+diseases first recorded early, in mid-life and later in life, indicating that
+disease–fertility coupling was not simply capturing differences in disease
+onset.
+
+This distinction sharpened the evolutionary interpretation of the project. When
+a disease manifests influences how strongly its deleterious effects are exposed
+to selection; what the underlying genetic variation does to reproduction
+influences whether selection through fertility opposes or reinforces those
+effects. Both can shape the evolutionary fate of disease-associated variation.
+
+The same logic also led us to ask whether reproductive consequences differ
+between the sexes. They do: disease-associated genes showed widespread sexually
+antagonistic effects, suggesting that variation detrimental in one sex may
+sometimes be maintained through reproductive benefits in the other.
 
 What began as a question raised by rare-disease genetics therefore became a
 population-level evolutionary hypothesis:
 
 **The reproductive consequences of disease-associated genetic variation may
-help explain why some human diseases are common while others remain rare.**
+help explain variation in human disease prevalence.**
 
 Long live evolutionary biology.
 
-This work has been submitted to *Nature Genetics*, and a preprint is in
-production at Research Square.
+The manuscript was submitted to *Nature Communications* in September 2026;
+a preprint is in production at Research Square.
 
 ---
 
