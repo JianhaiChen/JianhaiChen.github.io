@@ -140,6 +140,10 @@ def markdown_to_html(markdown: str) -> str:
       flush_all()
       blocks.append("<hr>")
       continue
+    if line.startswith("### "):
+      flush_all()
+      blocks.append(f'<h3 style="margin-top: 32px;">{inline_markdown(line[4:])}</h3>')
+      continue
     if line.startswith("## "):
       flush_all()
       blocks.append(f"<h2>{inline_markdown(line[3:])}</h2>")
