@@ -1158,7 +1158,8 @@ h3 {
 }
 
 .note-figure {
-  margin: 28px 0 32px;
+  max-width: 600px;
+  margin: 28px auto 32px;
 }
 
 .note-figure img {
