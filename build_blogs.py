@@ -13,7 +13,7 @@ from xml.sax.saxutils import escape as xml_escape
 ROOT = Path(__file__).resolve().parent
 SOURCE_DIR = ROOT / "blog-posts"
 OUTPUT_DIR = ROOT / "notes"
-SITE_URL = "https://JianhaiChen.github.io"
+SITE_URL = "https://jianhaichen.github.io"
 
 
 @dataclass
@@ -169,13 +169,20 @@ def markdown_to_html(markdown: str) -> str:
   return "\n        ".join(blocks)
 
 
-def page_shell(title: str, eyebrow: str, lead: str, body_html: str) -> str:
+def page_shell(title: str, eyebrow: str, lead: str, body_html: str, url: str = "") -> str:
   return f"""<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{escape(title)} | Jian-Hai Chen</title>
+    <meta name="description" content="{escape(lead)}">
+    <meta name="author" content="Jian-Hai Chen">
+    <link rel="canonical" href="{escape(url)}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{escape(title)}">
+    <meta property="og:description" content="{escape(lead)}">
+    <meta property="og:url" content="{escape(url)}">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
@@ -213,7 +220,7 @@ def page_shell(title: str, eyebrow: str, lead: str, body_html: str) -> str:
 def render_post(post: Post) -> None:
   body_html = markdown_to_html(post.body)
   (OUTPUT_DIR / f"{post.slug}.html").write_text(
-    page_shell(post.title, post.category, post.summary, body_html),
+    page_shell(post.title, post.category, post.summary, body_html, post.full_url),
     encoding="utf-8",
   )
 
@@ -299,6 +306,18 @@ def render_feed(posts: list[Post]) -> None:
   (ROOT / "feed.xml").write_text(feed, encoding="utf-8")
 
 
+def render_sitemap(posts: list[Post]) -> None:
+  base = SITE_URL.lower()
+  urls = [f"{base}/", f"{base}/notes/"] + [f"{base}/{post.url}" for post in posts]
+  lines = "\n".join(f"  <url><loc>{xml_escape(u)}</loc></url>" for u in urls)
+  (ROOT / "sitemap.xml").write_text(
+    '<?xml version="1.0" encoding="UTF-8"?>\n'
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    f"{lines}\n</urlset>\n",
+    encoding="utf-8",
+  )
+
+
 def main() -> None:
   OUTPUT_DIR.mkdir(exist_ok=True)
   posts = load_posts()
@@ -306,6 +325,7 @@ def main() -> None:
     render_post(post)
   render_index(posts)
   render_feed(posts)
+  render_sitemap(posts)
   print(f"Built {len(posts)} blog post(s)")
 
 
