@@ -125,6 +125,8 @@ Rare-disease studies routinely begin with a number: the prevalence of the
 disease. Duchenne affects roughly one in several thousand male births; other
 disorders may affect one in tens or hundreds of thousands.
 
+![With Dr. Manyuan Long at Medici on 57th near the University of Chicago, where many of our conversations about science took place over a meal.](../assets/blog/new-genes-medici-manyuan.jpg)
+
 Manyuan Long once told me that, in science, finding the right question can be
 more important than finding the answer. I kept coming back to that idea. My
 intuition was that disease prevalence itself was an important evolutionary
