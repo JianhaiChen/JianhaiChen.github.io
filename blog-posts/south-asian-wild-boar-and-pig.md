@@ -16,7 +16,11 @@ In 2014, while I was affiliated with the College of Animal Science and Technolog
 
 The project was fortunate to receive strong support from my mentor Dr. Shuhong Zhao, as well as Prof. Xuewen Xu and Prof. Xinyun Li, and important academic insights from Dr. Jianlin Han and many coauthors, including Dr. Xiaoyong Du, Dr. Zhuqing Zheng, and others. Over the years, the work moved with me across different stages, including my later time in the Department of Ecology and Evolution at the University of Chicago. The analysis gradually became more than a regional population genetics project; it became a way to revisit a long-standing story about wild boar history.
 
+![With Dr. Shuhong Zhao, Dr. Jianlin Han, and our Nepalese collaborators at the National Agriculture Genetic Resources Center (Genebank) in Nepal, January 2020.](../assets/blog/wild-boar-nepal-genebank-2020.jpg)
+
 The project also owes a great deal to Dr. Greger Larson, Dr. Laurent Frantz, and Dr. Lingzhao Fang, whose contributions were enormous. We had several in-depth discussions together at the Plant and Animal Genome (PAG) Conference, followed by many online meetings over the years. Laurent even traveled to China specifically for this project and spent several months there discussing the work with our team. Their expertise, critical questions, and generosity shaped how we analyzed the data and how we understood the history of wild boars and pigs.
+
+![With Dr. Greger Larson, Dr. Laurent Frantz, and Dr. Lingzhao Fang at the Plant and Animal Genome (PAG) Conference.](../assets/blog/wild-boar-pag-meeting.jpg)
 
 Our manuscript has now been written and submitted. The review process has already taken about two years, and the paper is accepted in Science. The title is: **Ancient introgression drives wild boar expansion and phenotypic diversification of domestic pigs**. Please see [https://www.science.org/doi/10.1126/science.adq7553](https://www.science.org/doi/10.1126/science.adq7553).
 

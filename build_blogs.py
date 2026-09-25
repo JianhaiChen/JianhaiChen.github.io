@@ -140,6 +140,15 @@ def markdown_to_html(markdown: str) -> str:
       flush_all()
       blocks.append("<hr>")
       continue
+    img = re.fullmatch(r"!\[(.*?)\]\((\S+?)\)", line)
+    if img:
+      flush_all()
+      cap = inline_markdown(img.group(1))
+      blocks.append(
+        f'<figure class="note-figure"><img src="{escape(img.group(2))}" alt="{escape(img.group(1))}" loading="lazy">'
+        f"<figcaption>{cap}</figcaption></figure>"
+      )
+      continue
     if line.startswith("### "):
       flush_all()
       blocks.append(f'<h3 style="margin-top: 32px;">{inline_markdown(line[4:])}</h3>')
