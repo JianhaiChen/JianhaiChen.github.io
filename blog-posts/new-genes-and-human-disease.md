@@ -32,7 +32,7 @@ Looking back, the answer to my original question may lie partly in the genes the
 
 ### People behind the work
 
-This work was a close collaboration with Dr. Patrick Landback, Dr. Deanna Arsala, Alexander Guzzetta, Shengqian Xia, Jared Atlas, Dylan Sosa, Dr. Yong E. Zhang, Dr. Jingqiu Cheng, Dr. Bairong Shen, and Dr. Manyuan Long. I am grateful to Patrick for laying the foundation of this project, to Manyuan for entrusting me with it and for the many discussions about new genes and evolutionary innovation, and to Bairong Shen for his long-term support from West China Hospital.
+This work was a close collaboration with Dr. Manyuan Long. I am grateful to Patrick for laying the foundation of this project, to Manyuan for entrusting me with it and for the many discussions about new genes and evolutionary innovation, and to Bairong Shen for his long-term support from West China Hospital.
 
 The paper is published in _Genome Research_: **Evolutionarily new genes in humans with disease phenotypes reveal functional enrichment patterns shaped by adaptive innovation and sexual selection**. Please see [https://doi.org/10.1101/gr.279498.124](https://doi.org/10.1101/gr.279498.124).
 
