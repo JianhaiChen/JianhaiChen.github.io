@@ -12,6 +12,8 @@ This project did not start with me. It began with Dr. Patrick Landback, the seco
 
 Patrick originally developed this project with Manyuan, focusing on the role of new genes in rare diseases. The path to publication, however, was not straightforward. I first heard about the project in 2017, when I was a visiting student at the University of Chicago and Manyuan told me about the idea. At the time, I knew very little about human disease genetics. Several years later, after Patrick had graduated, Manyuan asked me to take over the project.
 
+![With Dr. Manyuan Long at Medici on 57th near the University of Chicago, talking science over a meal.](../assets/blog/new-genes-medici-manyuan.jpg)
+
 In 2019, I joined West China Hospital of Sichuan University and continued working on the project remotely under Manyuan’s mentorship. Our goal was simple: to develop the original idea further and eventually bring the work to publication.
 
 As the analysis progressed, one pattern kept emerging: evolutionarily new genes were relatively rare among rare-disease genes.
