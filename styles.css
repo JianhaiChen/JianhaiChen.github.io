@@ -1158,8 +1158,22 @@ h3 {
 }
 
 .note-figure {
-  max-width: 600px;
-  margin: 28px auto 32px;
+  float: right;
+  width: 42%;
+  margin: 6px 0 16px 28px;
+}
+
+@media (max-width: 700px) {
+  .note-figure {
+    float: none;
+    width: 100%;
+    margin: 20px 0 24px;
+  }
+}
+
+.note-page h2,
+.note-page h3 {
+  clear: both;
 }
 
 .note-figure img {
@@ -1170,8 +1184,8 @@ h3 {
 }
 
 .note-figure figcaption {
-  margin-top: 10px;
+  margin-top: 8px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 13px;
   line-height: 1.5;
 }
