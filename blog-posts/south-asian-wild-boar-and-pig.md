@@ -20,7 +20,7 @@ The project was fortunate to receive strong support from my mentor Dr. Shuhong Z
 
 ![With Dr. Greger Larson, Dr. Laurent Frantz, and Dr. Lingzhao Fang at the Plant and Animal Genome (PAG) Conference.](../assets/blog/wild-boar-pag-meeting.jpg)
 
-The project also owes a great deal to Dr. Greger Larson, Dr. Laurent Frantz, and Dr. Lingzhao Fang, whose contributions were enormous. We had several in-depth discussions together at the Plant and Animal Genome (PAG) Conference, followed by many online meetings over the years. Laurent even traveled to China specifically for this project and spent several months there discussing the work with our team. Their expertise, critical questions, and generosity shaped how we analyzed the data and how we understood the history of wild boars and pigs.
+The project also owes a great deal to Dr. Greger Larson, Dr. Laurent Frantz, and Dr. Lingzhao Fang, whose contributions were enormous. We had several in-depth discussions together at the Plant and Animal Genome (PAG) Conference, followed by many online meetings over the years. Laurent even traveled to China specifically for this project and spent several months there discussing the work with our team. Their expertise, critical questions, and generosity shaped how we analyzed the data and how we understood the history of wild boars and pigs. Their earlier work on the evolution of wild boars, pigs, and the wider pig family (Suidae) also laid a solid foundation on which our project was built (Frantz et al., 2016).
 
 Our manuscript has now been written and submitted. The review process has already taken about two years, and the paper is accepted in Science. The title is: **Ancient introgression drives wild boar expansion and phenotypic diversification of domestic pigs**. Please see [https://www.science.org/doi/10.1126/science.adq7553](https://www.science.org/doi/10.1126/science.adq7553).
 
@@ -31,3 +31,5 @@ Welcome to the South-Asian-Wild-boar-and-pig research project. The primary datas
 Rothschild, M. F., & Ruvinsky, A. (Eds.). _The Genetics of the Pig_. CABI, 2011.
 
 Larson, G., Dobney, K., Albarella, U., Fang, M., Matisoo-Smith, E., Robins, J., Lowden, S., Finlayson, H., Brand, T., Willerslev, E., Rowley-Conwy, P., Andersson, L., & Cooper, A. Worldwide phylogeography of wild boar reveals multiple centers of pig domestication. _Science_ 307(5715), 1618-1621, 2005. doi: 10.1126/science.1106927.
+
+Frantz, L., Meijaard, E., Gongora, J., Haile, J., Groenen, M. A. M., & Larson, G. The Evolution of Suidae. _Annual Review of Animal Biosciences_ 4, 61-85, 2016. doi: [10.1146/annurev-animal-021815-111155](https://doi.org/10.1146/annurev-animal-021815-111155).
