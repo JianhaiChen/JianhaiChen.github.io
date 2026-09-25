@@ -8,7 +8,7 @@ summary: What Mendelian disease phenotypes reveal about how young genes shape hu
 
 As an evolutionary geneticist, I have always been curious about why rare diseases are so rare.
 
-This project did not start with me. It began with Dr. Patrick Landback, the second author of the paper and a former graduate student of Dr. Manyuan Long at the University of Chicago, who now works in fisheries in Alaska (probably, according to Manyuan; I have not verified this with the fish). Patrick first wanted to work with Manyuan on this topic, and his early manuscript focused mainly on the role of new genes in rare diseases. The submission process did not go smoothly. Later, Manyuan asked me to take over the work.
+This project did not start with me. It began with Dr. Patrick Landback, the second author of the paper and a former graduate student of Dr. Manyuan Long at the University of Chicago, who now works in fisheries in Alaska (probably, according to Manyuan; I have not verified this with the fish). Patrick first wanted to work with Manyuan on this topic, and his early manuscript focused mainly on the role of new genes in rare diseases. The submission process did not go smoothly. Years after Patrick graduated, Manyuan asked me to take over the work.
 
 At that time I was at West China Hospital, Sichuan University, and collaborated with Manyuan remotely. We kept working on the project together, with the goal of bringing it to publication. As the analysis went on, I kept seeing the same pattern: new genes were relatively rare among rare disease genes.
 
